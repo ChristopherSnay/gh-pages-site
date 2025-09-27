@@ -20,4 +20,9 @@ export default defineConfig(({ mode }) => ({
     }),
   ],
   base: mode === 'development' ? '/' : '/gh-pages-site',
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3001',
+    },
+  },
 }));

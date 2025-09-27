@@ -1,19 +1,11 @@
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import { Outlet } from 'react-router-dom';
 import './App.scss';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-      <AppBar position="static" elevation={0}>
-        <Toolbar>
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </Toolbar>
-      </AppBar>
+      <Header />
       <main>
         <Outlet />
       </main>
