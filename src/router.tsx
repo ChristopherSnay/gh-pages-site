@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import ContactPage from './pages/ContactPage';
-import DevPage from './pages/local-only/DevPage';
+import AdminPage from './pages/local-only/AdminPage';
+import PostPage from './pages/PostPage';
 import PostsPage from './pages/PostsPage';
 import RestrictedLocalOnly from './providers/RestrictedLocalOnly';
 
@@ -12,25 +13,29 @@ export const router = createBrowserRouter(
       element: <App />,
       children: [
         {
-          path: 'dev',
+          path: 'admin',
           element: (
             <RestrictedLocalOnly>
-              <DevPage />
+              <AdminPage />
             </RestrictedLocalOnly>
-          ),
+          )
         },
         {
           index: true,
-          element: <PostsPage />,
+          element: <PostsPage />
         },
         {
           path: 'contact',
-          element: <ContactPage />,
+          element: <ContactPage />
         },
-      ],
-    },
+        {
+          path: 'post/:id',
+          element: <PostPage />
+        }
+      ]
+    }
   ],
   {
-    basename: '/gh-pages-site',
+    basename: '/gh-pages-site'
   }
 );

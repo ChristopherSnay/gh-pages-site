@@ -1,12 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import './App.scss';
 import Header from './components/Header';
 
 function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="d-flex flex-column w-100">
         <Outlet />
       </main>
     </>
