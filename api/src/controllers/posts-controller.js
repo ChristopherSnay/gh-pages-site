@@ -56,28 +56,40 @@ module.exports = postsController = {
   // Create a new post file with date, time, and slug
   save: async (req, res) => {
     try {
-      const { title, content } = req.body;
+      const { title, content, type, tags, author, blocks, date } = req.body;
 
       if (!title || !content) {
         return res.status(400).json({ error: 'Missing title or content' });
       }
 
-      const now = new Date();
-      const filename = getPostFilename(title, now);
+      const postDate = date ? new Date(date) : new Date();
+      const filename = getPostFilename(title, postDate);
       const filePath = path.join(DATA_DIR, filename);
 
       if (!filePath.startsWith(DATA_DIR)) {
         return res.status(400).json({ error: 'Invalid file path' });
       }
 
-      // Update manifest after saving post
-      await updatePostsManifest(DATA_DIR, MANIFEST_PATH);
-
       await fs.writeFile(
         filePath,
-        JSON.stringify({ title, content, date: now.toISOString() }, null, 2),
+        JSON.stringify(
+          {
+            title,
+            content,
+            type,
+            tags,
+            author,
+            blocks,
+            date: postDate.toISOString()
+          },
+          null,
+          2
+        ),
         'utf-8'
       );
+
+      // Update manifest after saving post
+      await updatePostsManifest(DATA_DIR, MANIFEST_PATH);
 
       res.json({ message: 'Post saved', filename });
     } catch (err) {
