@@ -1,0 +1,15 @@
+{
+  "title": "Second Post",
+  "date": "2025-09-27T21:25:00Z",
+  "type": "general",
+  "tags": ["introduction", "welcome"],
+  "blocks": [
+    { "type": "paragraph", "content": "This is the content of the second post." },
+    {
+      "type": "image",
+      "url": "/images/second-post-image.jpg",
+      "alt": "An illustrative image"
+    },
+    { "type": "code", "language": "javascript", "code": "console.log('Hello, world!');" }
+  ]
+}

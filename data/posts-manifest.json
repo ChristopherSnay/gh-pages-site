@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "2025-09-27-21-25-first-post.json",
+    "title": "First Post",
+    "date": "2025-09-27T21:25:00Z",
+    "type": "general",
+    "tags": ["introduction", "welcome"],
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-09-27-23-51-second-post.json",
+    "title": "Second Post",
+    "date": "2025-09-27T21:25:00Z",
+    "type": "general",
+    "tags": ["introduction", "welcome"],
+    "author": "Christopher Snay"
+  }
+]
