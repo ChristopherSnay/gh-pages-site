@@ -11,6 +11,8 @@ export default function PostPage() {
 
   return (
     <>
+      {loading && <Typography>Loading...</Typography>}
+      {error && <Typography color="error">{String(error)}</Typography>}
       {post && (
         <>
           <ImageBackdrop src={post.image} id={post.filename} title={post.title} />

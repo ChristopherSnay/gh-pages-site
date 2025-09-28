@@ -25,7 +25,7 @@ export const staticPostsService = {
     return { posts, page, pageSize, total, totalPages };
   },
   fetchPostByFilename: async (filename: string): Promise<Post> => {
-    const res = await fetch(`/data/${filename}`);
+    const res = await fetch(`${base}/data/${filename}`);
     if (!res.ok) {
       throw new Error('Post not found');
     }
