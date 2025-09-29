@@ -53,7 +53,6 @@ module.exports = postsController = {
     }
   },
 
-  // Create a new post file with date, time, and slug
   save: async (req, res) => {
     try {
       const { title, content, type, tags, author, blocks, date } = req.body;
@@ -88,7 +87,6 @@ module.exports = postsController = {
         'utf-8'
       );
 
-      // Update manifest after saving post
       await updatePostsManifest(DATA_DIR, MANIFEST_PATH);
 
       res.json({ message: 'Post saved', filename });
@@ -97,7 +95,6 @@ module.exports = postsController = {
     }
   },
 
-  // Delete a file
   delete: async (req, res) => {
     try {
       const { file } = req.body;

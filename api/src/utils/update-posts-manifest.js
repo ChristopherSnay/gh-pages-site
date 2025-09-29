@@ -24,6 +24,7 @@ module.exports = updatePostsManifest = async (dataDir, manifestPath) => {
         });
       } catch (err) {
         // skip unreadable files
+        // do nothing
       }
     }
 
