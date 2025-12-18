@@ -9,7 +9,8 @@
       "welcome"
     ],
     "updated": "2025-12-18T17:13:06.430Z",
-    "cover": "anderson_001.png"
+    "cover": "anderson_001.png",
+    "author": "Christopher Snay"
   },
   {
     "filename": "2025-09-27-23-51-second-post.json",
@@ -21,7 +22,8 @@
       "welcome"
     ],
     "updated": "2025-12-18T17:30:26.298Z",
-    "cover": ""
+    "cover": "",
+    "author": "Christopher Snay"
   },
   {
     "filename": "2025-12-18-10-52-222123123.json",
@@ -33,7 +35,8 @@
       "game"
     ],
     "updated": "2025-12-18T17:57:09.589Z",
-    "cover": "cards_001.png"
+    "cover": "cards_001.png",
+    "author": "Christopher Snay"
   },
   {
     "filename": "2025-12-18-12-32-new-website-framework.json",
@@ -46,18 +49,20 @@
       "react"
     ],
     "updated": "2025-12-18T17:57:31.548Z",
-    "cover": ""
+    "cover": "",
+    "author": "Christopher Snay"
   },
   {
     "filename": "2025-12-18-12-34-remove-efi-system-partition-from-a-hard-drive.json",
     "title": "Remove EFI System Partition From a Hard Drive",
     "date": "2025-12-18T17:34:53.468Z",
-    "type": "projects",
+    "type": "project",
     "tags": [
       "sysadmin",
       "script"
     ],
-    "updated": "2025-12-18T18:04:06.886Z",
-    "cover": "sysadmin.png"
+    "updated": "2025-12-18T18:06:04.722Z",
+    "cover": "sysadmin.png",
+    "author": "Christopher Snay"
   }
 ]
