@@ -1,0 +1,19 @@
+{
+  "filename": "2025-12-18-15-59-southgate-anderson-high-school.json",
+  "title": "Southgate Anderson High School",
+  "type": "education",
+  "author": "Christopher Snay",
+  "cover": "anderson_001.png",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": "Diploma"
+    },
+    {
+      "type": "paragraph",
+      "content": "Graduated: 2000"
+    }
+  ],
+  "date": "2000-06-01T00:00:00.265Z",
+  "updated": "2025-12-18T21:03:33.480Z"
+}

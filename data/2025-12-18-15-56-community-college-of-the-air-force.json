@@ -1,0 +1,19 @@
+{
+  "filename": "2025-12-18-15-56-community-college-of-the-air-force.json",
+  "title": "Community College of the Air Force",
+  "type": "education",
+  "author": "Christopher Snay",
+  "cover": "ccaf_001.png",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": "Associate of Applied Science in Avionics Systems Technology"
+    },
+    {
+      "type": "paragraph",
+      "content": "Graduated: 2007"
+    }
+  ],
+  "date": "2007-01-01T00:00:00.000Z",
+  "updated": "2025-12-18T21:06:22.367Z"
+}
