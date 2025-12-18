@@ -2,6 +2,11 @@
   "filename": "2025-12-18-12-32-new-website-framework.json",
   "title": "New Website Framework",
   "type": "",
+  "tags": [
+    "project",
+    "hobby",
+    "react"
+  ],
   "author": "Christopher Snay",
   "blocks": [
     {
@@ -22,5 +27,5 @@
     }
   ],
   "date": "2025-12-18T17:32:28.981Z",
-  "updated": "2025-12-18T17:33:04.984Z"
+  "updated": "2025-12-18T17:57:31.548Z"
 }

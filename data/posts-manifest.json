@@ -8,7 +8,8 @@
       "introduction",
       "welcome"
     ],
-    "updated": "2025-12-18T17:13:06.430Z"
+    "updated": "2025-12-18T17:13:06.430Z",
+    "cover": "anderson_001.png"
   },
   {
     "filename": "2025-09-27-23-51-second-post.json",
@@ -19,30 +20,44 @@
       "introduction",
       "welcome"
     ],
-    "updated": "2025-12-18T17:30:26.298Z"
+    "updated": "2025-12-18T17:30:26.298Z",
+    "cover": ""
   },
   {
     "filename": "2025-12-18-10-52-222123123.json",
     "title": "222123123222",
     "date": "2025-12-18T15:52:54.604Z",
     "type": "",
-    "tags": [],
-    "updated": "2025-12-18T17:41:20.063Z"
+    "tags": [
+      "project",
+      "game"
+    ],
+    "updated": "2025-12-18T17:57:09.589Z",
+    "cover": "cards_001.png"
   },
   {
     "filename": "2025-12-18-12-32-new-website-framework.json",
     "title": "New Website Framework",
     "date": "2025-12-18T17:32:28.981Z",
     "type": "",
-    "tags": [],
-    "updated": "2025-12-18T17:33:04.984Z"
+    "tags": [
+      "project",
+      "hobby",
+      "react"
+    ],
+    "updated": "2025-12-18T17:57:31.548Z",
+    "cover": ""
   },
   {
     "filename": "2025-12-18-12-34-remove-efi-system-partition-from-a-hard-drive.json",
     "title": "Remove EFI System Partition From a Hard Drive",
     "date": "2025-12-18T17:34:53.468Z",
-    "type": "",
-    "tags": [],
-    "updated": "2025-12-18T17:39:28.208Z"
+    "type": "projects",
+    "tags": [
+      "sysadmin",
+      "script"
+    ],
+    "updated": "2025-12-18T18:04:06.886Z",
+    "cover": "sysadmin.png"
   }
 ]
