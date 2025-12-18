@@ -1,16 +1,30 @@
 {
+  "filename": "2025-09-27-21-25-first-post.json",
   "title": "First Post",
-  "date": "2025-09-27T21:25:00Z",
   "type": "general",
-  "tags": ["introduction", "welcome"],
+  "tags": [
+    "introduction",
+    "welcome"
+  ],
   "author": "Christopher Snay",
+  "cover": "anderson_001.png",
   "blocks": [
-    { "type": "paragraph", "content": "This is the content of the first post." },
+    {
+      "type": "paragraph",
+      "content": "This is the content of the first post."
+    },
     {
       "type": "image",
-      "url": "/images/first-post-image.jpg",
+      "url": "ccaf_001.png",
       "alt": "An illustrative image"
     },
-    { "type": "code", "language": "javascript", "code": "console.log('Hello, world!');" }
-  ]
+    {
+      "type": "code",
+      "language": "javascript",
+      "code": "console.log('Hello, world!');",
+      "content": "test"
+    }
+  ],
+  "date": "2025-09-27T21:25:00Z",
+  "updated": "2025-12-18T17:13:06.430Z"
 }
