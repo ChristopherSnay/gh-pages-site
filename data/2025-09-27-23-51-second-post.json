@@ -1,7 +1,7 @@
 {
   "filename": "2025-09-27-23-51-second-post.json",
   "title": "Second Post",
-  "type": "general",
+  "type": "featured",
   "tags": [
     "introduction",
     "welcome"
@@ -9,13 +9,13 @@
   "author": "Christopher Snay",
   "blocks": [
     {
+      "type": "paragraph",
+      "content": "This is the content of the second post."
+    },
+    {
       "type": "image",
       "url": "default-image.jpg",
       "alt": "An illustrative image"
-    },
-    {
-      "type": "paragraph",
-      "content": "This is the content of the second post."
     },
     {
       "type": "code",
@@ -24,5 +24,5 @@
     }
   ],
   "date": "2025-09-27T21:25:00Z",
-  "updated": "2025-12-18T17:30:26.298Z"
+  "updated": "2025-12-18T20:34:53.591Z"
 }

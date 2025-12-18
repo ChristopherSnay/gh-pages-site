@@ -3,12 +3,12 @@
     "filename": "2025-09-27-21-25-first-post.json",
     "title": "First Post",
     "date": "2025-09-27T21:25:00Z",
-    "type": "general",
+    "type": "featured",
     "tags": [
       "introduction",
       "welcome"
     ],
-    "updated": "2025-12-18T17:13:06.430Z",
+    "updated": "2025-12-18T20:32:10.837Z",
     "cover": "anderson_001.png",
     "author": "Christopher Snay"
   },
@@ -16,12 +16,12 @@
     "filename": "2025-09-27-23-51-second-post.json",
     "title": "Second Post",
     "date": "2025-09-27T21:25:00Z",
-    "type": "general",
+    "type": "featured",
     "tags": [
       "introduction",
       "welcome"
     ],
-    "updated": "2025-12-18T17:30:26.298Z",
+    "updated": "2025-12-18T20:34:53.591Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -29,12 +29,12 @@
     "filename": "2025-12-18-10-52-222123123.json",
     "title": "222123123222",
     "date": "2025-12-18T15:52:54.604Z",
-    "type": "",
+    "type": "featured",
     "tags": [
       "project",
       "game"
     ],
-    "updated": "2025-12-18T17:57:09.589Z",
+    "updated": "2025-12-18T18:32:15.694Z",
     "cover": "cards_001.png",
     "author": "Christopher Snay"
   },
@@ -42,13 +42,13 @@
     "filename": "2025-12-18-12-32-new-website-framework.json",
     "title": "New Website Framework",
     "date": "2025-12-18T17:32:28.981Z",
-    "type": "",
+    "type": "featured",
     "tags": [
       "project",
       "hobby",
       "react"
     ],
-    "updated": "2025-12-18T17:57:31.548Z",
+    "updated": "2025-12-18T18:32:21.181Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -56,13 +56,23 @@
     "filename": "2025-12-18-12-34-remove-efi-system-partition-from-a-hard-drive.json",
     "title": "Remove EFI System Partition From a Hard Drive",
     "date": "2025-12-18T17:34:53.468Z",
-    "type": "project",
+    "type": "featured",
     "tags": [
       "sysadmin",
       "script"
     ],
-    "updated": "2025-12-18T18:06:04.722Z",
+    "updated": "2025-12-18T18:32:27.156Z",
     "cover": "sysadmin.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-18-14-01-university-of-connecticut.json",
+    "title": "University of Connecticut",
+    "date": "2025-12-18T19:01:36.503Z",
+    "type": "education",
+    "tags": [],
+    "updated": "2025-12-18T20:43:44.628Z",
+    "cover": "uconn_001.png",
     "author": "Christopher Snay"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "filename": "2025-09-27-21-25-first-post.json",
   "title": "First Post",
-  "type": "general",
+  "type": "featured",
   "tags": [
     "introduction",
     "welcome"
@@ -11,7 +11,7 @@
   "blocks": [
     {
       "type": "paragraph",
-      "content": "This is the content of the first post."
+      "content": "This is the content of the first post.\n\nanother line"
     },
     {
       "type": "image",
@@ -26,5 +26,5 @@
     }
   ],
   "date": "2025-09-27T21:25:00Z",
-  "updated": "2025-12-18T17:13:06.430Z"
+  "updated": "2025-12-18T20:32:10.837Z"
 }

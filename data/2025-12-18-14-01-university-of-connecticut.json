@@ -1,0 +1,15 @@
+{
+  "filename": "2025-12-18-14-01-university-of-connecticut.json",
+  "title": "University of Connecticut",
+  "type": "education",
+  "author": "Christopher Snay",
+  "cover": "uconn_001.png",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": "Bachelor of Science in Computer Science\n\nGraduation Year: 2014"
+    }
+  ],
+  "date": "2025-12-18T19:01:36.503Z",
+  "updated": "2025-12-18T20:43:44.628Z"
+}
