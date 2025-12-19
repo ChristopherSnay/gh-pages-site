@@ -13,6 +13,7 @@ export default function PostsPage() {
 
   const handlePageClick = (_e: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
+    navigate({ pathname: '/', search: `?page=${value}` });
   };
 
   return (

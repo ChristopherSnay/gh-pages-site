@@ -3,9 +3,11 @@ import { FormGroup, FormLabel, IconButton } from '@mui/material';
 import { BLOCK_TYPES } from '../../constants/blockTypes.const';
 import type { CodeContentBlockData } from '../../models/CodeContentBlockData';
 import type { ContentBlockData } from '../../models/ContentBlockData';
+import type { HyperlinkContentBlockData } from '../../models/HyperlinkContentBlockData';
 import type { ImageContentBlockData } from '../../models/ImageContentBlockData';
 import type { KeyValueBlockData } from '../../models/KeyValueBlockData';
 import CodeBlockEditor from './BlockEditors/CodeBlockEditor';
+import HyperlinkBlockEditor from './BlockEditors/HyperlinkBlockEditor';
 import ImageBlockEditor from './BlockEditors/ImageBlockEditor';
 import KeyValueBlockEditor from './BlockEditors/KeyValueBlockEditor';
 import ParagraphBlockEditor from './BlockEditors/ParagraphBlockEditor';
@@ -92,6 +94,16 @@ export default function ContentBlockList(props: Readonly<ContentBlockListProps>)
       {block.type === BLOCK_TYPES.KeyValue && (
         <KeyValueBlockEditor
           block={block as KeyValueBlockData}
+          onChange={(updatedBlock) => {
+            const updatedBlocks = [...(props.blocks ?? [])];
+            updatedBlocks[index] = updatedBlock;
+            props.onChange(updatedBlocks);
+          }}
+        />
+      )}
+      {block.type === BLOCK_TYPES.Hyperlink && (
+        <HyperlinkBlockEditor
+          block={block as HyperlinkContentBlockData}
           onChange={(updatedBlock) => {
             const updatedBlocks = [...(props.blocks ?? [])];
             updatedBlocks[index] = updatedBlock;

@@ -3,7 +3,8 @@
   "title": "New Website Framework",
   "type": "featured",
   "tags": [
-    "hobby"
+    "hobby",
+    "react"
   ],
   "author": "Christopher Snay",
   "cover": "splash-bg.jpg",
@@ -23,8 +24,13 @@
     {
       "content": "You're using it right now! This website is built with the same framework, showcasing its capabilities in real-time.",
       "type": "paragraph"
+    },
+    {
+      "type": "hyperlink",
+      "content": "GitHub Repository",
+      "url": "https://github.com/ChristopherSnay/gh-pages-site"
     }
   ],
   "date": "2025-07-30T00:00:00Z",
-  "updated": "2025-12-19T15:36:05.521Z"
+  "updated": "2025-12-19T20:49:21.924Z"
 }

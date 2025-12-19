@@ -10,10 +10,11 @@
   "cover": "",
   "blocks": [
     {
-      "content": "// Program.cs\n\nbuilder.Services.AddControllers().AddJsonOptions(opt => \n{\n\topt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());\n});",
-      "type": "code"
+      "content": "// Program.cs\n\nbuilder.Services.AddControllers().AddJsonOptions(opt => \n{\n\topt.JsonSerializerOptions\n\t\t.Converters\n\t\t.Add(new JsonStringEnumConverter());\n});",
+      "type": "code",
+      "language": "c#"
     }
   ],
   "date": "2023-05-18T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.704627Z"
+  "updated": "2025-12-19T20:32:00.900Z"
 }

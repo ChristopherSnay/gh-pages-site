@@ -3,7 +3,8 @@
   "title": "Proton Pack",
   "type": "featured",
   "tags": [
-    "hobby"
+    "hobby",
+    "arduino"
   ],
   "author": "Christopher Snay",
   "cover": "proton_001.jpg",
@@ -250,5 +251,5 @@
     }
   ],
   "date": "2021-11-01T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.748172Z"
+  "updated": "2025-12-19T20:25:26.826Z"
 }

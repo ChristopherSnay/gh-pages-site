@@ -76,6 +76,7 @@ export default function PostForm() {
       )}
       <hr />
       <div className="row g-3">
+        <h2>Post Details</h2>
         <div className="col-12 col-md-6">
           <TextField
             fullWidth
@@ -125,7 +126,7 @@ export default function PostForm() {
           />
         </div>
         <hr />
-        <h2 className="m-0">Content Blocks</h2>
+        <h2 className="m-0">Post Content</h2>
 
         {post && (
           <ContentBlockList

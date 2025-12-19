@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import type { Post } from '../models/Post';
 import { postsService } from '../services/local-only/postsService';
 import { staticPostsService } from '../services/staticPostsService';
@@ -10,10 +11,20 @@ export const usePosts = (type?: string) => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<unknown | null>(null);
-  const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(defaultPageSize);
   const [total, setTotal] = useState<number>(0);
+  const [searchParams] = useSearchParams();
+  const pageParam = searchParams.get('page');
+  const initialPage = pageParam ? parseInt(pageParam, 10) : 1;
+  const [page, setPage] = useState<number>(initialPage);
+
+  useEffect(() => {
+    const newPage = pageParam ? parseInt(pageParam, 10) : 1;
+    if (newPage !== page) {
+      setPage(newPage);
+    }
+  }, [pageParam]);
 
   useEffect(() => {
     const fetchPosts = async () => {

@@ -1,8 +1,10 @@
 import type { CodeContentBlockData } from '../../models/CodeContentBlockData';
 import type { ContentBlockData } from '../../models/ContentBlockData';
+import type { HyperlinkContentBlockData } from '../../models/HyperlinkContentBlockData';
 import type { ImageContentBlockData } from '../../models/ImageContentBlockData';
 import type { KeyValueBlockData } from '../../models/KeyValueBlockData';
 import CodeContentBlock from './ContentBlocks/CodeContentBlock';
+import HyperlinkContentBlock from './ContentBlocks/HyperlinkContentBlock';
 import ImageContentBlock from './ContentBlocks/ImageContentBlock';
 import KeyValueBlock from './ContentBlocks/KeyValueBlock';
 import ParagraphContentBlock from './ContentBlocks/ParagraphContentBlock';
@@ -16,6 +18,8 @@ export default function PostContentBlock(props: Readonly<PostContentBlockProps>)
         return <ImageContentBlock data={props.block as ImageContentBlockData} />;
       case 'code':
         return <CodeContentBlock data={props.block as CodeContentBlockData} />;
+      case 'hyperlink':
+        return <HyperlinkContentBlock data={props.block as HyperlinkContentBlockData} />;
       case 'keyValue':
         return <KeyValueBlock data={props.block as KeyValueBlockData} />;
       default:

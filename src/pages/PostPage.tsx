@@ -16,8 +16,16 @@ export default function PostPage() {
   };
   return (
     <>
-      {loading && <Typography>Loading...</Typography>}
-      {error && <Typography color="error">{String(error)}</Typography>}
+      {loading && (
+        <div className="container my-4">
+          <Typography>Loading...</Typography>
+        </div>
+      )}
+      {error && (
+        <div className="container my-4">
+          <Typography color="error">{String(error)}</Typography>
+        </div>
+      )}
       {post && (
         <>
           <ImageBackdrop src={post.cover} id={post.filename} title={post.title} />

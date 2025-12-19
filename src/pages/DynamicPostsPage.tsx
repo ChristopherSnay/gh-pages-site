@@ -2,6 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import PostCard from '../components/PostCard';
 import { usePosts } from '../hooks/usePosts';
 
+//TODO: need to gate unrecognized post types
 export default function DynamicPostsPage() {
   const { postType } = useParams();
   const { posts } = usePosts(postType);

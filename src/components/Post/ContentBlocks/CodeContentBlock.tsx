@@ -3,7 +3,7 @@ import type { CodeContentBlockData } from '../../../models/CodeContentBlockData'
 
 export default function CodeContentBlock(props: Readonly<CodeContentBlockProps>) {
   return (
-    <div className="py-4">
+    <div className="mb-5">
       <Paper
         component="div"
         elevation={0}
