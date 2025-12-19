@@ -6,14 +6,20 @@
   "cover": "ccaf_001.png",
   "blocks": [
     {
-      "type": "paragraph",
-      "content": "Associate of Applied Science in Avionics Systems Technology"
-    },
-    {
-      "type": "paragraph",
-      "content": "Graduated: 2007"
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Degree",
+          "value": "Associate of Applied Science in Avionics Systems Technology"
+        },
+        {
+          "key": "Graduated",
+          "value": "2007"
+        }
+      ]
     }
   ],
   "date": "2007-01-01T00:00:00.000Z",
-  "updated": "2025-12-18T21:06:22.367Z"
+  "updated": "2025-12-19T19:50:29.109Z"
 }
