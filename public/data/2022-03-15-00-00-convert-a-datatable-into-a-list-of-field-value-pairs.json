@@ -10,10 +10,10 @@
   "cover": "",
   "blocks": [
     {
-      "content": "public static List&lt;Dictionary&lt;string, dynamic>> ToDict(this DataTable dt) \n{\n    var tableDict = new List&lt;Dictionary&lt;string, dynamic>>();\n\n    foreach (DataRow row in dt.Rows)\n    {\n        var rowDict = new Dictionary&lt;string, dynamic>();\n\n        foreach (DataColumn col in dt.Columns) \n        {\n            var fieldValue = row&#91;col].Equals(DBNull.Value)\n                ? null\n                : row&#91;col];\n\n            rowDict.Add(col.ColumnName, fieldValue);\n        }\n\n        tableDict.Add(rowDict);\n    }\n\n    return tableDict;\n}",
+      "content": "public static List<Dictionary<string, dynamic>> ToDict(this DataTable dt) \n{\n    var tableDict = new List<Dictionary<string, dynamic>>();\n\n    foreach (DataRow row in dt.Rows)\n    {\n        var rowDict = new Dictionary<string, dynamic>();\n\n        foreach (DataColumn col in dt.Columns) \n        {\n            var fieldValue = row[col].Equals(DBNull.Value)\n                ? null\n                : row[col];\n\n            rowDict.Add(col.ColumnName, fieldValue);\n        }\n\n        tableDict.Add(rowDict);\n    }\n\n    return tableDict;\n}",
       "type": "code"
     }
   ],
   "date": "2022-03-15T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.729627Z"
+  "updated": "2025-12-19T15:31:49.480Z"
 }

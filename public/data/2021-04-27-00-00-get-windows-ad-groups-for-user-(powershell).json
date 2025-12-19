@@ -2,16 +2,12 @@
   "filename": "2021-04-27-00-00-get-windows-ad-groups-for-user-(powershell).json",
   "title": "Get Windows AD Groups for user (PowerShell)",
   "type": "featured",
-  "tags": [
-    "powershell",
-    "sysadmin",
-    "windows"
-  ],
+  "tags": ["powershell", "sysadmin", "windows"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
     {
-      "content": "(&#91;ADSISEARCHER]\"samaccountname=$($env:USERNAME)\").Findone().Properties.memberof -replace '^CN=(&#91;^,]+).+$','$1'",
+      "content": "([ADSISEARCHER]\"samaccountname=$($env:USERNAME)\").Findone().Properties.memberof -replace '^CN=([^,]+).+$','$1'",
       "type": "code"
     }
   ],

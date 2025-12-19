@@ -653,7 +653,7 @@
     "author": "Christopher Snay"
   },
   {
-    "filename": "2022-03-15-00-00-convert-a-c#-model-into-a-list-of-sqlparameters.json",
+    "filename": "2022-03-15-00-00-convert-a-csharp-model-into-a-list-of-sqlparameters.json",
     "title": "Convert a C# model into a list of SqlParameters",
     "date": "2022-03-15T00:00:00Z",
     "type": "featured",
@@ -675,7 +675,7 @@
       "c#",
       "code"
     ],
-    "updated": "2025-12-19T02:40:37.729627Z",
+    "updated": "2025-12-19T15:31:49.480Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -945,7 +945,7 @@
     "tags": [
       "hobby"
     ],
-    "updated": "2025-12-19T02:40:37.699627Z",
+    "updated": "2025-12-19T15:30:25.928Z",
     "cover": "splash-bg.jpg",
     "author": "Christopher Snay"
   },

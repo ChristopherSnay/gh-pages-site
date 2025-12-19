@@ -2,15 +2,12 @@
   "filename": "2019-02-08-00-00-compare-2-files-with-visual-studio.json",
   "title": "Compare 2 Files with Visual Studio",
   "type": "featured",
-  "tags": [
-    "code",
-    "sysadmin"
-  ],
+  "tags": ["code", "sysadmin"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
     {
-      "content": "// open cmd\n&lt;path to Visual Studio\\Common7\\IDE>devenv /diff file1 file2",
+      "content": "// open cmd\n<path to Visual Studio\\Common7\\IDE>devenv /diff file1 file2",
       "type": "code"
     },
     {

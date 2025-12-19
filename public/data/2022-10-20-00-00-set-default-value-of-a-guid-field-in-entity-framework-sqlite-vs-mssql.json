@@ -2,17 +2,12 @@
   "filename": "2022-10-20-00-00-set-default-value-of-a-guid-field-in-entity-framework-sqlite-vs-mssql.json",
   "title": "Set default value of a GUID field in Entity Framework Sqlite vs MsSql",
   "type": "featured",
-  "tags": [
-    "c#",
-    "entityframework",
-    "sqlite",
-    "code"
-  ],
+  "tags": ["c#", "entityframework", "sqlite", "code"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
     {
-      "content": "protected override void OnModelCreating(ModelBuilder modelBuilder)\n{\n   modelBuidler.Entity&lt;MyEntity>(entity => \n      if (_settings.UseSql) \n      {\n         entity.Property(e => e.Id)\n            .HasColumnName(\"id\")\n            .HasDefaultValueSql(\"(newid())\");\n      }\n      else if (_settings.UseSqlite)\n      {\n         entity.Property(e => e.Id)\n            .HasColumnName(\"id\")\n            .HasDefaultValue(Guid.NewGuid());\n      }\n      ....\n}",
+      "content": "protected override void OnModelCreating(ModelBuilder modelBuilder)\n{\n   modelBuidler.Entity<MyEntity>(entity => \n      if (_settings.UseSql) \n      {\n         entity.Property(e => e.Id)\n            .HasColumnName(\"id\")\n            .HasDefaultValueSql(\"(newid())\");\n      }\n      else if (_settings.UseSqlite)\n      {\n         entity.Property(e => e.Id)\n            .HasColumnName(\"id\")\n            .HasDefaultValue(Guid.NewGuid());\n      }\n      ....\n}",
       "type": "code"
     }
   ],

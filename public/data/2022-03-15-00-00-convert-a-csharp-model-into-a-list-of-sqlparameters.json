@@ -1,0 +1,20 @@
+{
+  "filename": "2022-03-15-00-00-convert-a-csharp-model-into-a-list-of-sqlparameters.json",
+  "title": "Convert a C# model into a list of SqlParameters",
+  "type": "featured",
+  "tags": ["c#", "sql", "code"],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "public static List<SqlParameter> ToSqlParameters<T>(this T obj)\n{\n  var result = new List<SqlParameter>();\n  var properties = obj.GetType().GetProperties();\n    \n  properties.ToList().ForEach(propertyInfo => \n  {\n    var column = propertyInfo.GetCustomAttribute<ColumnAttribute>();\n    var notMapped = propertyInfo.GetCustomAttribute<NotMappedAttribute>();\n\n    // see previous post for this method \"IsNullOrDefault\"\n    if (column != null &amp;&amp; notMapped = null &amp;&amp; !propertyInfo.IsNullOrDefault(obj)) \n    {\n      var fieldValue = propertyInfo.GetValue(obj, default);\n      var sqlParam = new SqlParameter($\"@{column.Name}\", fieldValue);\n\n      result.Add(sqlParam);\n    }\n  });\n\n  return result;\n}",
+      "type": "code"
+    },
+    {
+      "content": "Assumes properties are decorated with [Column(\"column_name\")] attributes.",
+      "type": "paragraph"
+    }
+  ],
+  "date": "2022-03-15T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.730685Z"
+}
