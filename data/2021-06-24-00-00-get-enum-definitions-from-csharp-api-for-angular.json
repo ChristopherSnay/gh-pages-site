@@ -1,0 +1,25 @@
+{
+  "filename": "2021-06-24-00-00-get-enum-definitions-from-csharp-api-for-angular.json",
+  "title": "Get enum definitions from C# API for Angular",
+  "type": "featured",
+  "tags": [
+    "c#",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "internal static class EnumExt\n{\n\tpublic static List<EnumDefinition> Define<TEnum>() where TEnum : Enum\n        {\n            \tvar result = new List<EnumDefinition>();\n            \tvar keys = Enum.GetNames(typeof(TEnum));\n\n            \tkeys.ToList().ForEach(key =>\n            \t{\n\t\t\tvar desc = ((TEnum)Enum.Parse(typeof(TEnum), key))\n\t\t\t\t.GetType()\n\t\t\t\t.GetMember(key)\n\t\t\t\t.FirstOrDefault()\n\t\t\t\t?.GetCustomAttribute<DescriptionAttribute>()\n\t\t\t\t?.Description;\n\n\t\t\tif (string.IsNullOrWhiteSpace(desc))\n\t\t\t{\n\t\t\t\tdesc = key;\n\t\t\t}\n\n\t\t\tvar value = (int)(Enum.Parse(typeof(TEnum), key));\n\n\t\t\tvar def = EnumDefinition.Create(key, value, desc);\n\n\t\t\tresult.Add(def);\n\t\t});\n\n\t\treturn result;\n\t}\n}",
+      "type": "code",
+      "language": "c#"
+    },
+    {
+      "content": "internal class EnumDefinition\n{\n\tpublic string Key { get; private set; }\n\tpublic int Value { get; private set; }\n\tpublic string Description { get; private set; }\n\n\tpublic static EnumDefinition Create(\n\t\tstring key, int value, string desc)\n\t{\n\t\treturn new EnumDefinition\n\t\t{\n\t\t\tKey = key,\n\t\t\tValue = value,\n\t\t\tDescription = desc\n\t\t};\n\t}\n}",
+      "type": "code",
+      "language": "c#"
+    }
+  ],
+  "date": "2021-06-24T00:00:00Z",
+  "updated": "2025-12-19T15:42:25.391Z"
+}

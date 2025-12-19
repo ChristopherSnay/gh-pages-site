@@ -2,14 +2,12 @@
   "filename": "2019-05-30-00-00-remove-from-git-tracking.json",
   "title": "Remove From git Tracking",
   "type": "featured",
-  "tags": [
-    "git"
-  ],
+  "tags": ["git"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
     {
-      "content": "git rm --cached &lt;file>\ngit rm --cached &lt;directory> -r\ngit rm --cached ./ -r",
+      "content": "git rm --cached <file>\ngit rm --cached <directory> -r\ngit rm --cached ./ -r",
       "type": "code"
     }
   ],

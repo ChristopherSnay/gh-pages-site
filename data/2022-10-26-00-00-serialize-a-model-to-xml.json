@@ -10,11 +10,11 @@
   "cover": "",
   "blocks": [
     {
-      "content": "string xml;\nusing (var writer = new StringWriter())\n{\n\tvar serializer = new XmlSerializer(typeof(MyModel));\n\tserializer.Serialize(writer, myModel);\n\txml = writer.ToString();\n}",
+      "content": "string xml;\n\nusing (var writer = new StringWriter())\n{\n\tvar serializer = new XmlSerializer(typeof(MyModel));\n\tserializer.Serialize(writer, myModel);\n\txml = writer.ToString();\n}",
       "type": "code",
       "language": "c#"
     }
   ],
   "date": "2022-10-26T00:00:00Z",
-  "updated": "2025-12-19T02:54:24.156Z"
+  "updated": "2025-12-19T15:43:17.183Z"
 }

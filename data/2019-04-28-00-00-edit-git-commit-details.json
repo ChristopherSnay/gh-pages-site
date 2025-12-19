@@ -2,9 +2,7 @@
   "filename": "2019-04-28-00-00-edit-git-commit-details.json",
   "title": "edit git commit details",
   "type": "featured",
-  "tags": [
-    "git"
-  ],
+  "tags": ["git"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
@@ -17,7 +15,7 @@
       "type": "paragraph"
     },
     {
-      "content": "git commit --amend --author=\"Christopher Snay &lt;email@email.com>\"",
+      "content": "git commit --amend --author=\"Christopher Snay <email@email.com>\"",
       "type": "code"
     },
     {

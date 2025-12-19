@@ -2,15 +2,12 @@
   "filename": "2019-06-21-00-00-register-generics-for-dependency-injection.json",
   "title": "Register generics for Dependency Injection",
   "type": "featured",
-  "tags": [
-    "c#",
-    "code"
-  ],
+  "tags": ["c#", "code"],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
     {
-      "content": "services.AddTransient(typeof(IExternalApiResponseReader&lt;>),\n typeof(ExternalApiResponseReader&lt;>));",
+      "content": "services.AddTransient(typeof(IExternalApiResponseReader<>),\n typeof(ExternalApiResponseReader<>));",
       "type": "code"
     }
   ],
