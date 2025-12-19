@@ -1,15 +1,8 @@
 import { Breadcrumbs, Link } from '@mui/material';
-import { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet } from 'react-router';
 import AdminControls from '../../components/local-only/AdminControls';
 
 export default function AdminPage() {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.log('AdminPage location:', location);
-  }, [location]);
-
   return (
     <div className="container mt-4">
       <Breadcrumbs>

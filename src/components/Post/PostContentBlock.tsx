@@ -11,7 +11,15 @@ export default function PostContentBlock(props: Readonly<PostContentBlockProps>)
     switch (props.block.type) {
       case 'paragraph':
         return hasSpacers ? (
-          <pre>{props.block.content}</pre>
+          <Typography
+            component="pre"
+            sx={{
+              whiteSpace: 'pre-wrap',
+              overflowX: 'auto'
+            }}
+          >
+            {props.block.content}
+          </Typography>
         ) : (
           <p>{props.block.content}</p>
         );
@@ -57,7 +65,9 @@ export default function PostContentBlock(props: Readonly<PostContentBlockProps>)
                 component="pre"
                 color="primary"
                 sx={{
-                  fontFamily: 'monospace'
+                  fontFamily: 'monospace',
+                  whiteSpace: 'pre-wrap',
+                  overflowX: 'auto'
                 }}
               >
                 {props.block.content}

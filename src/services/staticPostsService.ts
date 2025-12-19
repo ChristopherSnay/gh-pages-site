@@ -1,17 +1,17 @@
-import { CONFIG } from '../constants/config';
 import type { PaginatedPosts } from '../models/PaginatedPosts';
 import type { Post } from '../models/Post';
 import type { PostManifestEntry } from '../models/PostManifestEntry';
 
-const base = import.meta.env.BASE_URL || '/';
+const baseUrl = import.meta.env.BASE_URL || '/';
+const defaultPageSize = import.meta.env.VITE_DEFAULT_PAGE_SIZE;
 
 export const staticPostsService = {
   fetchPosts: async (
     page = 1,
-    pageSize = CONFIG.DEFAULT_PAGE_SIZE,
+    pageSize = defaultPageSize,
     type?: string
   ): Promise<PaginatedPosts> => {
-    const res = await fetch(`${base}data/posts-manifest.json`);
+    const res = await fetch(`${baseUrl}data/posts-manifest.json`);
     let manifest: PostManifestEntry[] = await res.json();
 
     // Sort by date descending
@@ -30,7 +30,7 @@ export const staticPostsService = {
     return { posts, page, pageSize, total, totalPages };
   },
   fetchPostByFilename: async (filename: string): Promise<Post> => {
-    const res = await fetch(`${base}/data/${filename}`);
+    const res = await fetch(`${baseUrl}/data/${filename}`);
     if (!res.ok) {
       throw new Error('Post not found');
     }

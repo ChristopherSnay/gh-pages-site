@@ -21,7 +21,6 @@ module.exports = updatePostsManifest = async (dataDir, manifestPath) => {
         if (!post.filename) continue;
 
         const manifestEntry = createManifestEntry(post);
-        console.debug('manifestEntry', manifestEntry);
         manifest.push(manifestEntry);
       } catch (err) {
         // skip unreadable files

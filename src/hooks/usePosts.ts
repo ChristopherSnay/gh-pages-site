@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { CONFIG } from '../constants/config';
 import type { Post } from '../models/Post';
 import { postsService } from '../services/local-only/postsService';
 import { staticPostsService } from '../services/staticPostsService';
 
 const isDev = import.meta.env.MODE === 'development';
+const defaultPageSize = import.meta.env.VITE_DEFAULT_PAGE_SIZE;
 
 export const usePosts = (type?: string) => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -12,7 +12,7 @@ export const usePosts = (type?: string) => {
   const [error, setError] = useState<unknown | null>(null);
   const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
-  const [pageSize, setPageSize] = useState<number>(CONFIG.DEFAULT_PAGE_SIZE);
+  const [pageSize, setPageSize] = useState<number>(defaultPageSize);
   const [total, setTotal] = useState<number>(0);
 
   useEffect(() => {
@@ -21,8 +21,8 @@ export const usePosts = (type?: string) => {
       setError(null);
       try {
         const response = isDev
-          ? await postsService.fetchPosts(page, CONFIG.DEFAULT_PAGE_SIZE, type)
-          : await staticPostsService.fetchPosts(page, CONFIG.DEFAULT_PAGE_SIZE, type);
+          ? await postsService.fetchPosts(page, defaultPageSize, type)
+          : await staticPostsService.fetchPosts(page, defaultPageSize, type);
 
         response.posts.sort(
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()

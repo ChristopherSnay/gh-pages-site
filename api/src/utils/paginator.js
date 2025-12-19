@@ -1,10 +1,12 @@
 module.exports = paginator = {
-  paginate: (array, page = 1, pageSize = 10) => {
-    page = parseInt(page, 10);
-    pageSize = parseInt(pageSize, 10);
+  paginate: (array, page = 1, pageSize = process.env.DEFAULT_PAGE_SIZE) => {
+    page = parseInt(page);
+    pageSize = parseInt(pageSize);
 
+    // validate the page and pageSize values
     if (isNaN(page) || page < 1) page = 1;
-    if (isNaN(pageSize) || pageSize < 1) pageSize = 10;
+    if (isNaN(pageSize) || pageSize < 1) pageSize = process.env.DEFAULT_PAGE_SIZE;
+
     const total = array.length;
     const start = (page - 1) * pageSize;
     const end = start + pageSize;
@@ -20,7 +22,7 @@ module.exports = paginator = {
   parsePaginationParams: (
     req,
     defaultPage = 1,
-    defaultPageSize = 10,
+    defaultPageSize = process.env.DEFAULT_PAGE_SIZE,
     defaultType = 'all'
   ) => {
     let {
@@ -32,6 +34,7 @@ module.exports = paginator = {
     page = parseInt(page, 10);
     pageSize = parseInt(pageSize, 10);
 
+    // validate the page and pageSize values
     if (isNaN(page) || page < 1) page = defaultPage;
     if (isNaN(pageSize) || pageSize < 1) pageSize = defaultPageSize;
     if (!type) type = defaultType;

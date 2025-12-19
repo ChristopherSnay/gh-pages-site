@@ -12,7 +12,6 @@ export default function PostsPage() {
   };
 
   const handlePageClick = (_e: React.ChangeEvent<unknown>, value: number) => {
-    console.debug('value', value);
     setPage(value);
   };
 
