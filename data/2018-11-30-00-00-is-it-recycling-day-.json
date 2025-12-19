@@ -13,16 +13,17 @@
       "type": "paragraph"
     },
     {
-      "content": "This lightweight website was built to help residents of Lisbon, Connecticut quickly check whether it's their recycling week \u2014 no digging through calendars or PDFs required. With a clean interface and location-aware features powered by the Google Maps API, users can easily find their recycling schedule and stay informed.",
+      "content": "This lightweight website was built to help residents of Lisbon, Connecticut quickly check whether it's their recycling week — no digging through calendars or PDFs required. With a clean interface and location-aware features powered by the Google Maps API, users can easily find their recycling schedule and stay informed.",
       "type": "paragraph"
     },
     {
-      "content": "The site is designed for clarity and speed, offering a no-frills experience that gets straight to the point. Whether you're checking from your phone or desktop, it\u2019s a practical tool that makes local life just a little more convenient.",
+      "content": "The site is designed for clarity and speed, offering a no-frills experience that gets straight to the point. Whether you're checking from your phone or desktop, it’s a practical tool that makes local life just a little more convenient.",
       "type": "paragraph"
     },
     {
       "content": "www.lisbonrecycling.com",
-      "type": "paragraph"
+      "url": "https://www.lisbonrecycling.com",
+      "type": "hyperlink"
     },
     {
       "type": "image",
@@ -38,5 +39,5 @@
     }
   ],
   "date": "2018-11-30T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.708628Z"
+  "updated": "2025-12-19T20:41:17.861Z"
 }
