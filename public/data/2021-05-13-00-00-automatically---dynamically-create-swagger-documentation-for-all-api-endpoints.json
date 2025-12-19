@@ -1,0 +1,21 @@
+{
+  "filename": "2021-05-13-00-00-automatically---dynamically-create-swagger-documentation-for-all-api-endpoints.json",
+  "title": "Automatically / Dynamically create Swagger documentation for all API Endpoints",
+  "type": "featured",
+  "tags": [
+    "c#",
+    "linq",
+    "swagger",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// Generate Documentation for each endpoint automatically\n            var actionDescriptors = actionDescriptor.ActionDescriptors.Items.ToList();\n            actionDescriptors.ForEach(x =>\n            {\n                IFilterMetadata noContent = new ProducesResponseTypeAttribute(204);\n                x.FilterDescriptors.Add(new FilterDescriptor(noContent, 0));\n\n                IFilterMetadata unauth = new ProducesResponseTypeAttribute(401);\n                x.FilterDescriptors.Add(new FilterDescriptor(unauth, 0));\n\n                IFilterMetadata serverError = new ProducesResponseTypeAttribute(500);\n                x.FilterDescriptors.Add(new FilterDescriptor(serverError, 0));\n            });",
+      "type": "code"
+    }
+  ],
+  "date": "2021-05-13T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.725628Z"
+}

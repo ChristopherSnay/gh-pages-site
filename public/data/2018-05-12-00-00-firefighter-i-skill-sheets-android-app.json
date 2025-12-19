@@ -1,0 +1,49 @@
+{
+  "filename": "2018-05-12-00-00-firefighter-i-skill-sheets-android-app.json",
+  "title": "Firefighter I Skill Sheets Android App",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "python",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "ff1app_001.png",
+  "blocks": [
+    {
+      "content": "Turning a 200-Page PDF into a Usable Study Tool.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Preparing for the Firefighter I Practical Exams meant navigating a dense, ~200-page PDF filled with skill sheets \u2014 not exactly optimized for quick reference or mobile use. To streamline the experience, I built an Android app that transforms those static documents into an interactive study tool.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Using Python, I parsed the PDF into structured Java datasets, extracting each skill sheet's content and metadata. These datasets were then rendered in a clean, navigable GUI built with native Android components. The result: a searchable, scrollable, and far more user-friendly way to study on the go.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This project was a great exercise in cross-language data handling, GUI design, and solving a real-world problem with code. It's not flashy \u2014 but it's practical, and it made a difference when it mattered most.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "ff1app_001.png"
+    },
+    {
+      "type": "image",
+      "url": "ff1app_002.png"
+    },
+    {
+      "type": "image",
+      "url": "ff1app_003.png"
+    },
+    {
+      "type": "image",
+      "url": "ff1app_004.png"
+    }
+  ],
+  "date": "2018-05-12T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.739173Z"
+}

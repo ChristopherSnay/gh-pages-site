@@ -1,0 +1,40 @@
+{
+  "filename": "2018-12-07-00-00-flip.json",
+  "title": "Flip",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "flip_002.png",
+  "blocks": [
+    {
+      "content": "A Classic Dice Game Reimagined for Android.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Built using Android Studio and Java, Flip is a mobile adaptation of the traditional \u201cShut the Box\u201d dice game. This project was a hands-on exploration of Android UI components, from buttons and text views to dynamic layout handling. While the gameplay is simple \u2014 roll dice, flip tiles, and try to shut the box \u2014 the challenge lay in translating tactile mechanics into a smooth digital experience. It was a great exercise in managing state, user input, and visual feedback, all within the constraints of a mobile interface.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Whether you're familiar with the original pub game or just enjoy quick, strategic challenges, Flip offers a nostalgic twist with a clean, responsive design.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "flip_001.png"
+    },
+    {
+      "type": "image",
+      "url": "flip_002.png"
+    },
+    {
+      "type": "image",
+      "url": "flip_003.png"
+    }
+  ],
+  "date": "2018-12-07T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.736172Z"
+}

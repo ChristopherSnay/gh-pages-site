@@ -17,15 +17,25 @@ module.exports = paginator = {
       totalPages: Math.ceil(total / pageSize)
     };
   },
-  parsePaginationParams: (req, defaultPage = 1, defaultPageSize = 10) => {
-    let { page = defaultPage, pageSize = defaultPageSize } = req.query;
+  parsePaginationParams: (
+    req,
+    defaultPage = 1,
+    defaultPageSize = 10,
+    defaultType = 'all'
+  ) => {
+    let {
+      page = defaultPage,
+      pageSize = defaultPageSize,
+      type = defaultType
+    } = req.query;
 
     page = parseInt(page, 10);
     pageSize = parseInt(pageSize, 10);
 
     if (isNaN(page) || page < 1) page = defaultPage;
     if (isNaN(pageSize) || pageSize < 1) pageSize = defaultPageSize;
+    if (!type) type = defaultType;
 
-    return { page, pageSize };
+    return { page, pageSize, type };
   }
 };

@@ -1,0 +1,30 @@
+{
+  "filename": "2025-07-30-00-00-new-website-framework.json",
+  "title": "New Website Framework",
+  "type": "featured",
+  "tags": [
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "splash-bg.jpg",
+  "blocks": [
+    {
+      "content": "A Custom WordPress Alternative.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Faced with the rising cost of basic shared hosting (like BlueHost), I built a lightweight WordPress replacement from scratch using React, TypeScript, and Vite. The result is a fast, modular, and fully client-side framework hosted on GitHub Pages \u2014 no server required.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This project was a deep dive into static site generation, routing, and component-based architecture. It supports blog-style content, dynamic navigation, and responsive design, all without the overhead of traditional CMS platforms. It's lean, scalable, and tailored to my exact needs \u2014 a satisfying blend of cost-efficiency and creative control.",
+      "type": "paragraph"
+    },
+    {
+      "content": "You're using it right now! This website is built with the same framework, showcasing its capabilities in real-time.",
+      "type": "paragraph"
+    }
+  ],
+  "date": "2025-07-30T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.699627Z"
+}

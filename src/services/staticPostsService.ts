@@ -8,13 +8,18 @@ const base = import.meta.env.BASE_URL || '/';
 export const staticPostsService = {
   fetchPosts: async (
     page = 1,
-    pageSize = CONFIG.DEFAULT_PAGE_SIZE
+    pageSize = CONFIG.DEFAULT_PAGE_SIZE,
+    type?: string
   ): Promise<PaginatedPosts> => {
-    const res = await fetch(`${base}/data/posts-manifest.json`);
-    const manifest: PostManifestEntry[] = await res.json();
+    const res = await fetch(`${base}data/posts-manifest.json`);
+    let manifest: PostManifestEntry[] = await res.json();
 
     // Sort by date descending
     manifest.sort((a, b) => b.filename.localeCompare(a.date));
+
+    if (type) {
+      manifest = manifest.filter((entry) => entry.type === type);
+    }
 
     const total = manifest.length;
     const totalPages = Math.ceil(total / pageSize);

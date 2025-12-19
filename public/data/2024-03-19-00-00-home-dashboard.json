@@ -1,0 +1,63 @@
+{
+  "filename": "2024-03-19-00-00-home-dashboard.json",
+  "title": "Home Dashboard",
+  "type": "featured",
+  "tags": [
+    "hobby",
+    "raspberrypi"
+  ],
+  "author": "Christopher Snay",
+  "cover": "dash_001.jpg",
+  "blocks": [
+    {
+      "content": "Custom Smart Home Interface.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This fully custom web application runs on my local IIS server and is displayed via a Raspberry Pi with a touchscreen. Built with Angular Material and a .NET backend, it serves as a centralized smart home dashboard, integrating seamlessly with multiple IoT APIs:",
+      "type": "paragraph"
+    },
+    {
+      "content": "- Philips Hue\n- Samsung SmartThings\n- Hydrawise\n- OpenMeteo\n- Roku",
+      "type": "code"
+    },
+    {
+      "content": "The project showcases real-time device control, environmental monitoring, and media interaction \u2014 all through a sleek, responsive interface. It\u2019s a hands-on blend of frontend design, backend integration, and hardware deployment that turns a Raspberry Pi into a powerful home automation hub.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "dash_001.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_002.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_003.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_004.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_005.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_006.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_007.jpg"
+    },
+    {
+      "type": "image",
+      "url": "dash_008.jpg"
+    }
+  ],
+  "date": "2024-03-19T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.728629Z"
+}

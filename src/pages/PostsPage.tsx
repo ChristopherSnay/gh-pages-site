@@ -1,24 +1,27 @@
 import { Pagination } from '@mui/material';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PostCard from '../components/PostCard';
-import { CONFIG } from '../constants/config';
 import { usePosts } from '../hooks/usePosts';
 
 export default function PostsPage() {
-  const [page, setPage] = useState<number>(1);
-  const { posts, loading, error } = usePosts();
+  const { posts, loading, error, totalPages, page, setPage } = usePosts('featured');
   const navigate = useNavigate();
 
   const handlePostClick = (filename: string) => {
     navigate(`/post/${filename}`);
   };
 
+  const handlePageClick = (_e: React.ChangeEvent<unknown>, value: number) => {
+    console.debug('value', value);
+    setPage(value);
+  };
+
   return (
-    <div className="container d-flex flex-column">
+    <div className="container d-flex flex-column mt-4">
       {loading && <p>Loading posts...</p>}
 
       {error != null && <p style={{ color: 'red' }}>Error: {String(error)}</p>}
+
       <div className="row g-3">
         {posts.map((post, postIndex) => (
           <div key={postIndex} className="col-xl-4 col-md-6">
@@ -29,9 +32,9 @@ export default function PostsPage() {
 
       <Pagination
         className="align-self-center my-4"
-        count={Math.ceil(posts.length / CONFIG.DEFAULT_PAGE_SIZE)}
+        count={totalPages}
         page={page}
-        onChange={(_e, value: number) => setPage(value)}
+        onChange={handlePageClick}
       />
     </div>
   );

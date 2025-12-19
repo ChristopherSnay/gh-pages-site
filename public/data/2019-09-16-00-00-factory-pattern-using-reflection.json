@@ -1,0 +1,19 @@
+{
+  "filename": "2019-09-16-00-00-factory-pattern-using-reflection.json",
+  "title": "Factory Pattern Using Reflection",
+  "type": "featured",
+  "tags": [
+    "code",
+    "c#"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// class implements IModelFactory -> IFactoryModel CreateInstance(string modelName)\n\nprivate Dictionary<string, Type> _availableTypes;\n\npublic ModelFactory() {\n    LoadTypes();\n}\n\npublic IFactoryModel CreateInstance(string modelName)\n{\n    Type t = GetTypeToCreate(modelName);\n    //NOTE: handle null here\n    return Activator.CreateInstance(t) as IFactoryModel;\n}\n\nprivate void LoadTypes() \n{\n    _availableTypes = new Dictionary<string, Type>();\n    Type[] assemblyTypes = Assembly.GetExecutingAssembly().GetTypes();\n\n    assemblyTypes.Where(x => x.GetInterface(typeof(IFactoryModel).ToString()) != null).ToList()\n        .ForEach(y => _availableTypes.add(y.Name.ToLower(), y));\n}\n\nprivate IFactoryModel GetTypeToCreate(string name)\n{\n    _availableTypes.TryGetValue(name, out Type t);\n    return t ?? null;\n}",
+      "type": "code"
+    }
+  ],
+  "date": "2019-09-16T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.727628Z"
+}

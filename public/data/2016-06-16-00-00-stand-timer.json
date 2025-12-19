@@ -1,0 +1,22 @@
+{
+  "filename": "2016-06-16-00-00-stand-timer.json",
+  "title": "Stand Timer",
+  "type": "featured",
+  "tags": [
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "standtimer_001.png",
+  "blocks": [
+    {
+      "content": "I created this website to remind me to stand up while I'm programming at work. Previously located at standtimer.com",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "standtimer_001.png"
+    }
+  ],
+  "date": "2016-06-16T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.744173Z"
+}

@@ -1,0 +1,26 @@
+{
+  "filename": "2023-11-08-00-00-disable-the-windows--shake--feature.json",
+  "title": "Disable the Windows \"Shake\" Feature",
+  "type": "featured",
+  "tags": [
+    "sysadmin"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "Shaking the mouse while dragging another window's title bar minimizes all other Windows. The UI to disable this \u201cfeature\u201d is no longer obvious and I was able to disable it by making the following registry change. Note: This worked even on a gpo machine since it only modified CURRENT_USER.",
+      "type": "paragraph"
+    },
+    {
+      "content": "// registry location\nHKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+      "type": "code"
+    },
+    {
+      "content": "// add the following DWORD with value 1\nDisallowShaking",
+      "type": "code"
+    }
+  ],
+  "date": "2023-11-08T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.701628Z"
+}

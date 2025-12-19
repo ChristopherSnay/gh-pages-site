@@ -1,0 +1,19 @@
+{
+  "filename": "2025-12-18-16-20-travelers-insurance.json",
+  "title": "Travelers Insurance",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "travelers_001.png",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": "Software Engineer"
+    },
+    {
+      "type": "paragraph",
+      "content": "2020 - Present"
+    }
+  ],
+  "date": "2020-02-04T00:00:00.000Z",
+  "updated": "2025-12-18T21:25:21.843Z"
+}

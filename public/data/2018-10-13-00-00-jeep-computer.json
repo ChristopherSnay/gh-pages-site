@@ -1,0 +1,52 @@
+{
+  "filename": "2018-10-13-00-00-jeep-computer.json",
+  "title": "Jeep Computer",
+  "type": "featured",
+  "tags": [
+    "arduino",
+    "raspberrypi",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "jeepctrl_001.jpg",
+  "blocks": [
+    {
+      "content": "Different prototypes of a relay controller for Jeep accessories.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This first iteration uses a 2-line LCD display.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Testing the new 4-line LCD Display",
+      "type": "paragraph"
+    },
+    {
+      "content": "The newest prototype with 4 light-up buttons attached to each relay. It's working, but the Arduino does not have enough power to keep 4 relays charged at once. I need to amplify the signal from the Arduino I/O ports.",
+      "type": "paragraph"
+    },
+    {
+      "content": "A Raspberry Pi prototype that uses Python tkinter for a touch-screen UI. I don't have any pictures of the UI, but it's basically a full-screen 2x2 grid, each panel in the grid is a different relay switch.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "jeepctrl_001.jpg"
+    },
+    {
+      "type": "image",
+      "url": "jeepctrl_002.jpg"
+    },
+    {
+      "type": "image",
+      "url": "jeepctrl_003.jpg"
+    },
+    {
+      "type": "image",
+      "url": "jeepctrl_004.jpg"
+    }
+  ],
+  "date": "2018-10-13T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.739173Z"
+}

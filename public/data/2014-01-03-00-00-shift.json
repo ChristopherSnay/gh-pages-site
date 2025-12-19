@@ -1,0 +1,35 @@
+{
+  "filename": "2014-01-03-00-00-shift.json",
+  "title": "Shift",
+  "type": "featured",
+  "tags": [
+    "android",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "shift_001.png",
+  "blocks": [
+    {
+      "content": "Smart Scheduling for Everyday Life.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Shift is an Android app my friend and I developed in our spare time, eventually releasing an Alpha version on Google Play. The concept was simple but powerful: take your to-do list and intelligently slot each task into the open gaps in your calendar, creating a streamlined, automated daily schedule.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Built with a focus on usability and time management, Shift aimed to reduce decision fatigue by helping users visualize their day and prioritize tasks without manual planning. It was a rewarding challenge in balancing calendar integration, task logic, and UI responsiveness \u2014 and a great collaborative experience from prototype to release.",
+      "type": "paragraph"
+    },
+    {
+      "content": "working prototype",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "shift_001.png"
+    }
+  ],
+  "date": "2014-01-03T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.745172Z"
+}

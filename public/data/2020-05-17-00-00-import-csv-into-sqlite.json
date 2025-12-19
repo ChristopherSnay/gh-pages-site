@@ -1,0 +1,19 @@
+{
+  "filename": "2020-05-17-00-00-import-csv-into-sqlite.json",
+  "title": "Import csv into sqlite",
+  "type": "featured",
+  "tags": [
+    "code",
+    "sqlite"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// in terminal\nsqlite3\n.open file.db\n.mode csv\n.import file.csv tablename",
+      "type": "code"
+    }
+  ],
+  "date": "2020-05-17T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.726628Z"
+}

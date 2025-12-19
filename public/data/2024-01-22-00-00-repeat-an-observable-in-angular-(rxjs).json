@@ -1,0 +1,19 @@
+{
+  "filename": "2024-01-22-00-00-repeat-an-observable-in-angular-(rxjs).json",
+  "title": "Repeat an Observable in Angular (rxjs)",
+  "type": "featured",
+  "tags": [
+    "code",
+    "angular"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "interval(1000).subscribe(() => {\n\tthis._getLatest().subscribe(latest => {\n\t});\n});",
+      "type": "code"
+    }
+  ],
+  "date": "2024-01-22T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.721630Z"
+}

@@ -5,5 +5,6 @@ export interface PostManifestEntry {
   type: string;
   tags: string[];
   author: string;
-  image?: string;
+  cover?: string;
+  updated?: string;
 }

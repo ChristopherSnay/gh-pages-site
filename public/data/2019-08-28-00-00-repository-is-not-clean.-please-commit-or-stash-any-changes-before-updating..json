@@ -1,0 +1,19 @@
+{
+  "filename": "2019-08-28-00-00-repository-is-not-clean.-please-commit-or-stash-any-changes-before-updating..json",
+  "title": "Repository is not clean. Please commit or stash any changes before updating.",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "ng update --all --allow-dirty",
+      "type": "code"
+    }
+  ],
+  "date": "2019-08-28T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.727628Z"
+}

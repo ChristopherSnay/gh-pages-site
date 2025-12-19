@@ -1,0 +1,27 @@
+{
+  "filename": "2023-09-12-00-00-regenerate-the-angular-browserslist.json",
+  "title": "Regenerate the Angular browserslist",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "Delete .browserslistrc file in angular project root",
+      "type": "paragraph"
+    },
+    {
+      "content": "Run in terminal",
+      "type": "paragraph"
+    },
+    {
+      "content": "ng generate config browserslist",
+      "type": "code"
+    }
+  ],
+  "date": "2023-09-12T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.703627Z"
+}

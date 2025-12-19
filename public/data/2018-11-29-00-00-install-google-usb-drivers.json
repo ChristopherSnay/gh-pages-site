@@ -1,0 +1,18 @@
+{
+  "filename": "2018-11-29-00-00-install-google-usb-drivers.json",
+  "title": "install Google USB drivers",
+  "type": "featured",
+  "tags": [
+    "android"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// Android Studio\nTools > SDK Manager > Appearance &amp; Behavior > System Settings > Android SDK > SDK Tools (tab) > Google USB Driver (checkbox)",
+      "type": "code"
+    }
+  ],
+  "date": "2018-11-29T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.738173Z"
+}

@@ -1,0 +1,18 @@
+{
+  "filename": "2023-02-02-00-00-do-not-ignore-case-with-git-cli.json",
+  "title": "Do not ignore case with git cli",
+  "type": "featured",
+  "tags": [
+    "git"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "git config --global core.ignorecase false",
+      "type": "code"
+    }
+  ],
+  "date": "2023-02-02T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.705628Z"
+}

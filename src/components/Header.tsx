@@ -1,13 +1,22 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, IconButton, Link, Menu, MenuItem, Toolbar } from '@mui/material';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import usePostTypes from '../hooks/usePostTypes';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState<null | HTMLElement>(null);
+  const { postTypes } = usePostTypes();
+  const isDevelopment = import.meta.env.MODE === 'development';
+
+  const filteredPostTypes = useMemo<string[]>(() => {
+    let filtered = [...postTypes];
+
+    return filtered.filter((x) => x !== 'featured');
+  }, [postTypes]);
 
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar position="static" elevation={1}>
       <div className="container">
         <Toolbar className="px-0">
           <div className="d-flex d-md-none me-2">
@@ -44,6 +53,23 @@ export default function Header() {
           >
             christophersnay.com
           </Link>
+
+          {filteredPostTypes.map((type) => (
+            <Link
+              key={type}
+              component={RouterLink}
+              to={`/${type}`}
+              underline="none"
+              className="me-2"
+            >
+              {type}
+            </Link>
+          ))}
+          {isDevelopment && (
+            <Link component={RouterLink} to={'/admin'} color="error">
+              admin
+            </Link>
+          )}
         </Toolbar>
       </div>
     </AppBar>

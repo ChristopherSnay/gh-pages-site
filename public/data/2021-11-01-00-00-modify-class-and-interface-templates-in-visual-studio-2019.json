@@ -1,0 +1,26 @@
+{
+  "filename": "2021-11-01-00-00-modify-class-and-interface-templates-in-visual-studio-2019.json",
+  "title": "Modify class and interface templates in Visual Studio 2019",
+  "type": "featured",
+  "tags": [
+    "visualstudio"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "Nav to C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\ItemTemplates\\CSharp\\Code\\1033",
+      "type": "paragraph"
+    },
+    {
+      "content": "Open Class, or Interface directory",
+      "type": "paragraph"
+    },
+    {
+      "content": "Modify Class.cs or Interface.cs with preferred template",
+      "type": "paragraph"
+    }
+  ],
+  "date": "2021-11-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.733173Z"
+}

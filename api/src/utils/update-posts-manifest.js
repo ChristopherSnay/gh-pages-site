@@ -1,5 +1,7 @@
 const fs = require('fs/promises');
 const path = require('path');
+const { createPostModel } = require('../models/post');
+const { createManifestEntry } = require('../models/manifest-entry');
 
 module.exports = updatePostsManifest = async (dataDir, manifestPath) => {
   try {
@@ -11,17 +13,16 @@ module.exports = updatePostsManifest = async (dataDir, manifestPath) => {
       const filePath = path.join(dataDir, filename);
 
       try {
-        const content = await fs.readFile(filePath, 'utf-8');
-        const post = JSON.parse(content);
+        const fileContent = await fs.readFile(filePath, 'utf-8');
+        const parsedContent = JSON.parse(fileContent);
+        const post = createPostModel(parsedContent);
 
-        manifest.push({
-          filename,
-          title: post.title || '',
-          date: post.date || '',
-          type: post.type || '',
-          tags: post.tags || [],
-          author: post.author || ''
-        });
+        if (!post) continue;
+        if (!post.filename) continue;
+
+        const manifestEntry = createManifestEntry(post);
+        console.debug('manifestEntry', manifestEntry);
+        manifest.push(manifestEntry);
       } catch (err) {
         // skip unreadable files
         // do nothing

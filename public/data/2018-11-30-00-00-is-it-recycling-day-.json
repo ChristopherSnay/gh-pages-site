@@ -1,0 +1,42 @@
+{
+  "filename": "2018-11-30-00-00-is-it-recycling-day-.json",
+  "title": "Is It Recycling Day?",
+  "type": "featured",
+  "tags": [
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "lisbonrecycling-web_001.png",
+  "blocks": [
+    {
+      "content": "A Simple Utility for Lisbon Residents.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This lightweight website was built to help residents of Lisbon, Connecticut quickly check whether it's their recycling week \u2014 no digging through calendars or PDFs required. With a clean interface and location-aware features powered by the Google Maps API, users can easily find their recycling schedule and stay informed.",
+      "type": "paragraph"
+    },
+    {
+      "content": "The site is designed for clarity and speed, offering a no-frills experience that gets straight to the point. Whether you're checking from your phone or desktop, it\u2019s a practical tool that makes local life just a little more convenient.",
+      "type": "paragraph"
+    },
+    {
+      "content": "www.lisbonrecycling.com",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-web_001.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-web_002.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-web_003.png"
+    }
+  ],
+  "date": "2018-11-30T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.708628Z"
+}

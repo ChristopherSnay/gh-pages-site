@@ -10,19 +10,15 @@ export default defineConfig(({ mode }) => ({
       targets: [
         {
           src: '.nojekyll',
-          dest: '.',
-        },
-        {
-          src: '404.html',
-          dest: '.',
-        },
-      ],
-    }),
+          dest: '.'
+        }
+      ]
+    })
   ],
-  base: mode === 'development' ? '/' : '/gh-pages-site',
+  base: mode === 'development' ? '/' : '/gh-pages-site/',
   server: {
     proxy: {
-      '/api': 'http://localhost:3001',
-    },
-  },
+      '/api': 'http://localhost:3001'
+    }
+  }
 }));

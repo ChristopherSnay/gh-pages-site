@@ -1,0 +1,23 @@
+{
+  "filename": "2023-12-01-00-00-angular-missing-app.module.ts.json",
+  "title": "Angular Missing app.module.ts",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "app.module.ts is no longer included in the new command. You must include this flag for the app to scaffold like before:",
+      "type": "paragraph"
+    },
+    {
+      "content": "--no-standalone",
+      "type": "code"
+    }
+  ],
+  "date": "2023-12-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.700628Z"
+}

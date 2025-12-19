@@ -1,0 +1,20 @@
+{
+  "filename": "2022-10-26-00-00-serialize-a-model-to-xml.json",
+  "title": "Serialize a model to XML",
+  "type": "featured",
+  "tags": [
+    "code",
+    "c#"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "string xml;\nusing (var writer = new StringWriter())\n{\n\tvar serializer = new XmlSerializer(typeof(MyModel));\n\tserializer.Serialize(writer, myModel);\n\txml = writer.ToString();\n}",
+      "type": "code",
+      "language": "c#"
+    }
+  ],
+  "date": "2022-10-26T00:00:00Z",
+  "updated": "2025-12-19T02:54:24.156Z"
+}

@@ -1,0 +1,18 @@
+{
+  "filename": "2023-02-01-00-00-show-path-environment-variable-in-windows-cmd---terminal.json",
+  "title": "Show PATH environment variable in Windows cmd / terminal",
+  "type": "featured",
+  "tags": [
+    "sysadmin"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "echo %PATH:;=&echo.%",
+      "type": "code"
+    }
+  ],
+  "date": "2023-02-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.705628Z"
+}

@@ -1,0 +1,27 @@
+{
+  "filename": "2012-12-30-00-00-space-shooter.json",
+  "title": "Space Shooter",
+  "type": "featured",
+  "tags": [
+    "unity",
+    "c#"
+  ],
+  "author": "Christopher Snay",
+  "cover": "space_001.png",
+  "blocks": [
+    {
+      "content": "To skip the first UConn game design course, the professor told me I had to create a space shooter over Winter break that demonstrated that I didn't need the intro course.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "space_001.png"
+    },
+    {
+      "type": "image",
+      "url": "space_002.png"
+    }
+  ],
+  "date": "2012-12-30T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.742172Z"
+}
