@@ -22,12 +22,14 @@
       "type": "code"
     },
     {
-      "content": "The project showcases real-time device control, environmental monitoring, and media interaction \u2014 all through a sleek, responsive interface. It\u2019s a hands-on blend of frontend design, backend integration, and hardware deployment that turns a Raspberry Pi into a powerful home automation hub.",
+      "content": "The project showcases real-time device control, environmental monitoring, and media interaction — all through a sleek, responsive interface. It’s a hands-on blend of frontend design, backend integration, and hardware deployment that turns a Raspberry Pi into a powerful home automation hub.",
       "type": "paragraph"
     },
     {
       "type": "image",
-      "url": "dash_001.jpg"
+      "url": "dash_001.jpg",
+      "caption": "Home Screen",
+      "alt": "Screenshot of home screen"
     },
     {
       "type": "image",
@@ -59,5 +61,5 @@
     }
   ],
   "date": "2024-03-19T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.728629Z"
+  "updated": "2025-12-19T18:18:00.592Z"
 }
