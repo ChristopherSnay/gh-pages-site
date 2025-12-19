@@ -1,0 +1,19 @@
+{
+  "filename": "2023-05-18-00-00-display-enums-as-strings-in-swagger-swashbuckle.json",
+  "title": "Display enums as strings in Swagger/Swashbuckle",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// Program.cs\n\nbuilder.Services.AddControllers().AddJsonOptions(opt => \n{\n\topt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());\n});",
+      "type": "code"
+    }
+  ],
+  "date": "2023-05-18T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.704627Z"
+}

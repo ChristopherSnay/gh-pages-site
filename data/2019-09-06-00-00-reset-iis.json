@@ -1,0 +1,19 @@
+{
+  "filename": "2019-09-06-00-00-reset-iis.json",
+  "title": "Reset IIS",
+  "type": "featured",
+  "tags": [
+    "sysadmin",
+    "iis"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "iisreset /noforce",
+      "type": "code"
+    }
+  ],
+  "date": "2019-09-06T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.716629Z"
+}

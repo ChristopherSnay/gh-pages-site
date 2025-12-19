@@ -1,0 +1,19 @@
+{
+  "filename": "2019-08-28-00-00-list-all-globally-installed-npm-modules.json",
+  "title": "list all globally installed npm modules",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "npm"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "npm ls -g --depth 0",
+      "type": "code"
+    }
+  ],
+  "date": "2019-08-28T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.734172Z"
+}

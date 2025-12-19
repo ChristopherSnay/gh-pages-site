@@ -1,0 +1,44 @@
+{
+  "filename": "2015-05-13-00-00-fantasy-box-office.json",
+  "title": "Fantasy Box Office",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "fantasy_001.png",
+  "blocks": [
+    {
+      "content": "Movie Markets Meet Fantasy Gaming.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Inspired by the thrill of Fantasy Football, Fantasy Box Office lets players draft and manage a lineup of movies instead of athletes \u2014 competing based on real-world box office performance. Built in Java for Android, the app taps into the Rotten Tomatoes API to pull live data on current theatrical releases.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Users start by logging in and browsing a curated list of in-theater films. Tapping a title opens a detailed dialog with stats, ratings, and performance metrics. The goal? Build a blockbuster portfolio and outscore your friends as the weekend numbers roll in.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This project was a fun blend of entertainment and data-driven strategy, combining API integration, UI design, and game logic into a playful, predictive experience.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "fantasy_001.png"
+    },
+    {
+      "type": "image",
+      "url": "fantasy_002.png"
+    },
+    {
+      "type": "image",
+      "url": "fantasy_003.png"
+    }
+  ],
+  "date": "2015-05-13T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.746172Z"
+}

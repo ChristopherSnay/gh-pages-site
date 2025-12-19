@@ -1,0 +1,30 @@
+{
+  "filename": "2019-04-28-00-00-edit-git-commit-details.json",
+  "title": "edit git commit details",
+  "type": "featured",
+  "tags": [
+    "git"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "git rebase -i 0abc12def // - the commit before the one that needs edit",
+      "type": "code"
+    },
+    {
+      "content": "use vi to change 'pick' to 'edit' on the commit that needs edit",
+      "type": "paragraph"
+    },
+    {
+      "content": "git commit --amend --author=\"Christopher Snay &lt;email@email.com>\"",
+      "type": "code"
+    },
+    {
+      "content": "git rebase --continue // - repeat until all edited commits complete\n\ngit push -f",
+      "type": "code"
+    }
+  ],
+  "date": "2019-04-28T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.713630Z"
+}

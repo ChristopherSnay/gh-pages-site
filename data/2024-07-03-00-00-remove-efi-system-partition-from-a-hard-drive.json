@@ -1,20 +1,18 @@
 {
-  "filename": "2025-12-18-12-34-remove-efi-system-partition-from-a-hard-drive.json",
+  "filename": "2024-07-03-00-00-remove-efi-system-partition-from-a-hard-drive.json",
   "title": "Remove EFI System Partition From a Hard Drive",
   "type": "featured",
   "tags": [
-    "sysadmin",
-    "script"
+    "sysadmin"
   ],
   "author": "Christopher Snay",
   "cover": "sysadmin.png",
   "blocks": [
     {
-      "type": "code",
       "content": "diskpart\nlist disk\nselect disk <the disk number>\nclean",
-      "language": "shell"
+      "type": "code"
     }
   ],
-  "date": "2025-12-18T17:34:53.468Z",
-  "updated": "2025-12-18T18:32:27.156Z"
+  "date": "2024-07-03T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.707629Z"
 }

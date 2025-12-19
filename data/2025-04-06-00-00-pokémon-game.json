@@ -1,0 +1,72 @@
+{
+  "filename": "2025-04-06-00-00-pok\u00e9mon-game.json",
+  "title": "Pok\u00e9mon Game",
+  "type": "featured",
+  "tags": [
+    "react",
+    "hobby",
+    "nodejs"
+  ],
+  "author": "Christopher Snay",
+  "cover": "pokemon_001.png",
+  "blocks": [
+    {
+      "content": "Pok\u00e9mon Game \u2014 A React App with Local API for Learning and Play.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This project is a custom-built React app I created for my son, designed to make exploring Pok\u00e9mon cards fun and interactive. It features a searchable card interface, character quizzes, and simple games \u2014 all tailored to spark curiosity and engagement.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Under the hood, the app connects to a locally hosted API on my home server, which serves card data and image mappings from a SQLite database. This setup gave me hands-on experience with full-stack integration, including API design, database management, and dynamic rendering in React.",
+      "type": "paragraph"
+    },
+    {
+      "content": "The project was also a personal learning tool: I built it while preparing to lead a major React initiative at work, using it to deepen my comfort with component architecture, state handling, and responsive design \u2014 all in a context that was both technically challenging and personally meaningful.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_001.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_002.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_003.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_004.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_005.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_006.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_007.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_008.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_009.png"
+    },
+    {
+      "type": "image",
+      "url": "pokemon_010.png"
+    }
+  ],
+  "date": "2025-04-06T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.749171Z"
+}

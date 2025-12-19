@@ -1,0 +1,44 @@
+{
+  "filename": "2015-11-24-00-00-cards-rpg.json",
+  "title": "Cards RPG",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "cards_001.png",
+  "blocks": [
+    {
+      "content": "A Minimalist RPG Card Game for Android Cards is a turn-based RPG card game built entirely in Android Studio using Java and native UI components. With a clean, flat design and simple sprite art, the game features four classic archetypes \u2014 tank, melee, healer, and caster \u2014 each with distinct abilities and roles.",
+      "type": "paragraph"
+    },
+    {
+      "content": "The project was a deep dive into game logic, UI state management, and sprite-based animation within the constraints of Android\u2019s native toolkit. No game engines, no external libraries \u2014 just raw Android components driving the entire experience.",
+      "type": "paragraph"
+    },
+    {
+      "content": "While the visuals are intentionally minimal, the underlying mechanics offer strategic depth, making Cards a great example of how simplicity can still deliver engaging gameplay.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "cards_001.png"
+    },
+    {
+      "type": "image",
+      "url": "cards_002.png"
+    },
+    {
+      "type": "image",
+      "url": "cards_003.png"
+    },
+    {
+      "type": "image",
+      "url": "cards_004.png"
+    }
+  ],
+  "date": "2015-11-24T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.741172Z"
+}

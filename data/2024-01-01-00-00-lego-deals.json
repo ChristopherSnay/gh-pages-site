@@ -1,0 +1,58 @@
+{
+  "filename": "2024-01-01-00-00-lego-deals.json",
+  "title": "Lego Deals",
+  "type": "featured",
+  "tags": [
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "legodeals_001.jpg",
+  "blocks": [
+    {
+      "content": "Lego Price Tracker \u2014 Real-Time Deal Monitoring & Alerts.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This custom web application tracks discounted Lego sets across 29 major retailers, scraping prices hourly and storing them in a MySQL database. Since December 2022, it\u2019s been collecting historical pricing data and continues to run today.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Key features include:",
+      "type": "paragraph"
+    },
+    {
+      "content": "\ud83d\udd14 Telegram Alerts for price drops below user-defined thresholds.",
+      "type": "paragraph"
+    },
+    {
+      "content": "\ud83e\udde9 Personalized Views: filter by owned sets, wishlist items, or exclude unwanted sets.",
+      "type": "paragraph"
+    },
+    {
+      "content": "\ud83d\udce6 Daily Sync with Rebrickable's dataset for set details like piece count.",
+      "type": "paragraph"
+    },
+    {
+      "content": "\ud83c\udff7\ufe0f MSRP Updates via scraping from Lego.com and the BestBuy API (which is impressively free and reliable).",
+      "type": "paragraph"
+    },
+    {
+      "content": "\ud83d\uded2 eBay Listings: buy-it-now, free shipping deals shown on a separate page with shared filters (not tracked due to data inconsistency).",
+      "type": "paragraph"
+    },
+    {
+      "content": "The backend is powered by a .NET API and Angular frontend, hosted on a local IIS server. Scheduled tasks \u2014 including MSRP updates, Rebrickable syncs, and alert dispatches \u2014 run on the same server. The database is hosted on Bluehost.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "legodeals_001.jpg"
+    },
+    {
+      "type": "image",
+      "url": "legodeals_002.jpg"
+    }
+  ],
+  "date": "2024-01-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.736172Z"
+}

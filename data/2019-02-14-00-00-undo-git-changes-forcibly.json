@@ -1,0 +1,18 @@
+{
+  "filename": "2019-02-14-00-00-undo-git-changes-forcibly.json",
+  "title": "Undo git changes forcibly",
+  "type": "featured",
+  "tags": [
+    "git"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "git reset --hard HEAD",
+      "type": "code"
+    }
+  ],
+  "date": "2019-02-14T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.710651Z"
+}

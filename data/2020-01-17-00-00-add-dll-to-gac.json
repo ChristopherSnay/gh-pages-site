@@ -1,0 +1,19 @@
+{
+  "filename": "2020-01-17-00-00-add-dll-to-gac.json",
+  "title": "Add dll to GAC",
+  "type": "featured",
+  "tags": [
+    "gac",
+    "sysadmin"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "gacutil.exe -i -f C:\\pathtodll\\my.dll",
+      "type": "code"
+    }
+  ],
+  "date": "2020-01-17T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.720629Z"
+}

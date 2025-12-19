@@ -1,0 +1,26 @@
+{
+  "filename": "2018-11-29-00-00-ssh-key-generation.json",
+  "title": "ssh key generation",
+  "type": "featured",
+  "tags": [
+    "git"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "ssh key generation to a specific directory",
+      "type": "paragraph"
+    },
+    {
+      "content": "ssh-keygen\n// copy contents from C:\\Users\\&lt;&lt;&lt;me>>>\\.ssh\\id_rsa.pub\n// paste contents to: https://bitbucket.org/account/user/&lt;&lt;&lt;me>>>/ssh-keys/",
+      "type": "code"
+    },
+    {
+      "content": "ssh-keygen -f C:\\somepath\\filename",
+      "type": "code"
+    }
+  ],
+  "date": "2018-11-29T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.738173Z"
+}

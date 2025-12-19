@@ -1,0 +1,19 @@
+{
+  "filename": "2020-03-03-00-00-remove-amazon-integration-from-ubuntu.json",
+  "title": "Remove Amazon Integration from Ubuntu",
+  "type": "featured",
+  "tags": [
+    "linux",
+    "sysadmin"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "sudo rm /usr/share/applications/ubuntu-amazon-default.desktop\nsudo rm /usr/share/ubuntu-web-launchers/amazon-launcher",
+      "type": "code"
+    }
+  ],
+  "date": "2020-03-03T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.723629Z"
+}

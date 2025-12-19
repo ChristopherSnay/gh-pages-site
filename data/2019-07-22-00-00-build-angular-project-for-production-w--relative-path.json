@@ -1,0 +1,18 @@
+{
+  "filename": "2019-07-22-00-00-build-angular-project-for-production-w--relative-path.json",
+  "title": "Build Angular Project for Production w/ Relative Path",
+  "type": "featured",
+  "tags": [
+    "angular"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "ng build --prod --base-href ./",
+      "type": "code"
+    }
+  ],
+  "date": "2019-07-22T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.715629Z"
+}

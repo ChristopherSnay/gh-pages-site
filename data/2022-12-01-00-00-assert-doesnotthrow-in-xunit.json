@@ -1,0 +1,19 @@
+{
+  "filename": "2022-12-01-00-00-assert-doesnotthrow-in-xunit.json",
+  "title": "Assert DoesNotThrow in XUnit",
+  "type": "featured",
+  "tags": [
+    "code",
+    "c#"
+  ],
+  "author": "Christopher Snay",
+  "cover": "exception-dev_001.png",
+  "blocks": [
+    {
+      "content": "// Act\nvar ex = await Record.ExceptionAsync(() => _thing.DoSomethingAsync());\n\n// Assert\nAssert.Null(ex);",
+      "type": "code"
+    }
+  ],
+  "date": "2022-12-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.706630Z"
+}

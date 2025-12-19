@@ -1,0 +1,48 @@
+{
+  "filename": "2018-12-01-00-00-lisbon-recycling.json",
+  "title": "Lisbon Recycling",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "lisbonrecycling-android_001.png",
+  "blocks": [
+    {
+      "content": "Local Convenience in Your Pocket Designed specifically for residents of Lisbon, Connecticut, Lisbon Recycling is a free Android app that simplifies one of life's small but persistent questions: Is this my recycling week? With a clean interface and intuitive scheduling system, the app helps users stay on top of their recycling calendar without digging through paperwork or town websites.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Beyond scheduling, the app also includes the town\u2019s quarterly newsletter, keeping users informed about local updates and events. Integration with the Google Maps API adds a layer of location awareness, helping residents find drop-off points and navigate town services with ease.",
+      "type": "paragraph"
+    },
+    {
+      "content": "This project was a practical exercise in community-focused design, combining utility with simplicity \u2014 and proving that even small apps can make a meaningful impact.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-android_001.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-android_002.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-android_003.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-android_004.png"
+    },
+    {
+      "type": "image",
+      "url": "lisbonrecycling-android_005.png"
+    }
+  ],
+  "date": "2018-12-01T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.708628Z"
+}

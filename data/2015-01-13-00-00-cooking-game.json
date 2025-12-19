@@ -1,0 +1,28 @@
+{
+  "filename": "2015-01-13-00-00-cooking-game.json",
+  "title": "Cooking Game",
+  "type": "featured",
+  "tags": [
+    "android",
+    "java",
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "cookinggame_001.png",
+  "blocks": [
+    {
+      "content": "Cooking Game was an ambitious attempt to gamify the culinary process: players would select a recipe, identify the correct ingredients, and simulate cooking through interactive steps. Built entirely with native Android Studio UI components, the project was a deep dive into layout design, state management, and user interaction.",
+      "type": "paragraph"
+    },
+    {
+      "content": "While the gameplay didn't quite hit the mark \u2014 it lacked the spark to keep players engaged \u2014 the development journey was anything but wasted. It taught valuable lessons in user experience, flow control, and the importance of balancing mechanics with fun.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "cookinggame_001.png"
+    }
+  ],
+  "date": "2015-01-13T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.746172Z"
+}

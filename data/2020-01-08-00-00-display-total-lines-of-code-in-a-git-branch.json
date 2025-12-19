@@ -1,0 +1,18 @@
+{
+  "filename": "2020-01-08-00-00-display-total-lines-of-code-in-a-git-branch.json",
+  "title": "Display total lines of code in a git branch",
+  "type": "featured",
+  "tags": [
+    "git"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// where the hex are commit id's to differentiate\ngit diff 5cec833a 4ef01d13 --stat",
+      "type": "code"
+    }
+  ],
+  "date": "2020-01-08T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.719629Z"
+}

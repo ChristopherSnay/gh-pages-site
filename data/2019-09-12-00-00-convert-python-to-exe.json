@@ -1,0 +1,18 @@
+{
+  "filename": "2019-09-12-00-00-convert-python-to-exe.json",
+  "title": "Convert Python to Exe",
+  "type": "featured",
+  "tags": [
+    "python"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "#Install if needed\npip install pyinstaller\n\n#Generate exe\nC:/>pyinstaller -w -F myfile.py",
+      "type": "code"
+    }
+  ],
+  "date": "2019-09-12T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.717629Z"
+}

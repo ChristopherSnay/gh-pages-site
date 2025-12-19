@@ -1,0 +1,31 @@
+{
+  "filename": "2023-02-07-00-00-add-theme-switching-to-angular-material.json",
+  "title": "Add theme switching to Angular Material",
+  "type": "featured",
+  "tags": [
+    "angular",
+    "code"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "// styles.scss\n$dark-theme: mat.define-dark-theme(\n    vars.$primaryPalette, \n    vars.$accentPalette, \n    vars.$warnPalette);\n\n$light-theme: mat.define-light-theme(\n    vars.$primaryPalette,\n    vars.$accentPalette,\n    vars.$warnPalette);\n\n.light-theme {\n  @include mat.all-component-themes($light-theme);\n}\n\n.dark-theme {\n  @include mat.all-component-themes($dark-theme);\n}",
+      "type": "code"
+    },
+    {
+      "content": "// app.component.ts\nconstructor(\n  private _settingsService: SettingsService,\n   @Inject(DOCUMENT) private _document: Document) { }\n\n  ngOnInit(): void {\n    this._settingsService.theme$.subscribe(theme =&gt; {\n\n      if (theme === Themes.DARK) {\n        this._setDarkTheme();\n      } else {\n        this._setLightTheme();\n      }\n    });\n  }\n\n  private _setDarkTheme(): void {\n    this._document.documentElement.classList.add(Themes.DARK);\n    this._document.documentElement.classList.remove(Themes.LIGHT);\n  }\n\n  private _setLightTheme(): void {\n    this._document.documentElement.classList.add(Themes.LIGHT);\n    this._document.documentElement.classList.remove(Themes.DARK);\n  }",
+      "type": "code"
+    },
+    {
+      "content": "This is just a summary, so some of the more trivial parts are omitted.",
+      "type": "paragraph"
+    },
+    {
+      "content": "ref: https://octoperf.com/blog/2021/01/08/angular-material-multiple-themes",
+      "type": "paragraph"
+    }
+  ],
+  "date": "2023-02-07T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.733173Z"
+}

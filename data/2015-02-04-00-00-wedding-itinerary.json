@@ -1,0 +1,30 @@
+{
+  "filename": "2015-02-04-00-00-wedding-itinerary.json",
+  "title": "Wedding Itinerary",
+  "type": "featured",
+  "tags": [
+    "hobby"
+  ],
+  "author": "Christopher Snay",
+  "cover": "wedding_001.png",
+  "blocks": [
+    {
+      "content": "Android-Inspired Design for a Special Day.",
+      "type": "paragraph"
+    },
+    {
+      "content": "For my wedding party, I created a mobile-friendly website that mimics the look and feel of an Android ListView \u2014 a nod to my love for mobile UI design. Built with jQuery UI and the Google Maps API, the site offered guests a sleek itinerary, venue details, and interactive maps to help everyone stay on track and in the loop.",
+      "type": "paragraph"
+    },
+    {
+      "content": "The design was intentionally minimal and familiar, making it easy for guests to navigate on their phones without needing to download anything. It was a fun blend of personal creativity and practical utility \u2014 and a great excuse to sneak some tech into the celebration.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "wedding_001.png"
+    }
+  ],
+  "date": "2015-02-04T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.743174Z"
+}

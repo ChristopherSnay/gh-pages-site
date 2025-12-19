@@ -1,0 +1,36 @@
+{
+  "filename": "2015-07-13-00-00-another-cooking-game.json",
+  "title": "Another Cooking Game",
+  "type": "featured",
+  "tags": [
+    "c#",
+    "hobby",
+    "unreal"
+  ],
+  "author": "Christopher Snay",
+  "cover": "cooking_001.png",
+  "blocks": [
+    {
+      "content": "A Prototype in Unreal Engine 4.",
+      "type": "paragraph"
+    },
+    {
+      "content": "Built as a hobby project while exploring Unreal Engine 4, Another Cooking Game is a drag-and-drop cooking simulation that lets players assemble ingredients and prepare dishes in a playful, interactive environment.",
+      "type": "paragraph"
+    },
+    {
+      "content": "The prototype focuses on intuitive mechanics \u2014 players select ingredients, drag them into cooking zones, and trigger simple animations to simulate the cooking process. While minimal in scope, the project was a hands-on introduction to Unreal's Blueprint system, physics interactions, and UI layering.",
+      "type": "paragraph"
+    },
+    {
+      "content": "It's a small experiment, but one that sparked ideas for more immersive gameplay and deeper simulation mechanics down the line.",
+      "type": "paragraph"
+    },
+    {
+      "type": "image",
+      "url": "cooking_001.png"
+    }
+  ],
+  "date": "2015-07-13T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.741172Z"
+}

@@ -1,0 +1,18 @@
+{
+  "filename": "2018-11-04-00-00-open-raspberry-pi-config-ui.json",
+  "title": "Open Raspberry pi config UI",
+  "type": "featured",
+  "tags": [
+    "raspberrypi"
+  ],
+  "author": "Christopher Snay",
+  "cover": "",
+  "blocks": [
+    {
+      "content": "sudo raspi-config",
+      "type": "code"
+    }
+  ],
+  "date": "2018-11-04T00:00:00Z",
+  "updated": "2025-12-19T02:40:37.747173Z"
+}
