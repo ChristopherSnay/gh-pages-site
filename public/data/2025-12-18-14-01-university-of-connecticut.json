@@ -6,14 +6,20 @@
   "cover": "uconn_001.png",
   "blocks": [
     {
-      "type": "paragraph",
-      "content": "Bachelor of Science in Computer Science"
-    },
-    {
-      "type": "paragraph",
-      "content": "Graduated: 2014"
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Degree",
+          "value": "Bachelor of Science in Computer Science"
+        },
+        {
+          "key": "Graduated",
+          "value": "2014"
+        }
+      ]
     }
   ],
   "date": "2014-05-01T00:00:00.000Z",
-  "updated": "2025-12-18T21:03:14.376Z"
+  "updated": "2025-12-19T19:49:38.379Z"
 }

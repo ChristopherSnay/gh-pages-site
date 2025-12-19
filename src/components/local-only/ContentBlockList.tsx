@@ -1,11 +1,13 @@
 import { ArrowDropDown, ArrowDropUp, Delete } from '@mui/icons-material';
 import { FormGroup, FormLabel, IconButton } from '@mui/material';
 import { BLOCK_TYPES } from '../../constants/blockTypes.const';
-import type { CodeContentBlock } from '../../models/CodeContentBlock';
-import type { ContentBlock } from '../../models/ContentBlock';
-import type { ImageContentBlock } from '../../models/ImageContentBlock';
+import type { CodeContentBlockData } from '../../models/CodeContentBlockData';
+import type { ContentBlockData } from '../../models/ContentBlockData';
+import type { ImageContentBlockData } from '../../models/ImageContentBlockData';
+import type { KeyValueBlockData } from '../../models/KeyValueBlockData';
 import CodeBlockEditor from './BlockEditors/CodeBlockEditor';
 import ImageBlockEditor from './BlockEditors/ImageBlockEditor';
+import KeyValueBlockEditor from './BlockEditors/KeyValueBlockEditor';
 import ParagraphBlockEditor from './BlockEditors/ParagraphBlockEditor';
 
 export default function ContentBlockList(props: Readonly<ContentBlockListProps>) {
@@ -59,7 +61,7 @@ export default function ContentBlockList(props: Readonly<ContentBlockListProps>)
       </div>
       {block.type === BLOCK_TYPES.Paragraph && (
         <ParagraphBlockEditor
-          value={(block as ContentBlock).content}
+          value={(block as ContentBlockData).content}
           onChange={(value) => {
             const updatedBlocks = [...(props.blocks ?? [])];
             updatedBlocks[index] = { ...block, content: value };
@@ -69,7 +71,7 @@ export default function ContentBlockList(props: Readonly<ContentBlockListProps>)
       )}
       {block.type === BLOCK_TYPES.Image && (
         <ImageBlockEditor
-          block={block as ImageContentBlock}
+          block={block as ImageContentBlockData}
           onChange={(updatedBlock) => {
             const updatedBlocks = [...(props.blocks ?? [])];
             updatedBlocks[index] = updatedBlock;
@@ -77,9 +79,19 @@ export default function ContentBlockList(props: Readonly<ContentBlockListProps>)
           }}
         />
       )}
-      {block.type === 'code' && (
+      {block.type === BLOCK_TYPES.Code && (
         <CodeBlockEditor
-          block={block as CodeContentBlock}
+          block={block as CodeContentBlockData}
+          onChange={(updatedBlock) => {
+            const updatedBlocks = [...(props.blocks ?? [])];
+            updatedBlocks[index] = updatedBlock;
+            props.onChange(updatedBlocks);
+          }}
+        />
+      )}
+      {block.type === BLOCK_TYPES.KeyValue && (
+        <KeyValueBlockEditor
+          block={block as KeyValueBlockData}
           onChange={(updatedBlock) => {
             const updatedBlocks = [...(props.blocks ?? [])];
             updatedBlocks[index] = updatedBlock;
@@ -92,6 +104,6 @@ export default function ContentBlockList(props: Readonly<ContentBlockListProps>)
 }
 
 export interface ContentBlockListProps {
-  blocks?: ContentBlock[];
-  onChange: (blocks: ContentBlock[]) => void;
+  blocks?: ContentBlockData[];
+  onChange: (blocks: ContentBlockData[]) => void;
 }

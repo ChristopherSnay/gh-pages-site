@@ -3,5 +3,6 @@ export const BLOCK_TYPES = {
   Image: 'image',
   Code: 'code',
   Heading: 'heading',
-  List: 'list'
+  List: 'list',
+  KeyValue: 'keyValue'
 } as const;

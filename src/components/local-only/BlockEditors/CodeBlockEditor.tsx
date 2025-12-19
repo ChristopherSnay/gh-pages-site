@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
 import { useRef } from 'react';
-import type { CodeContentBlock } from '../../../models/CodeContentBlock';
+import type { CodeContentBlockData } from '../../../models/CodeContentBlockData';
 
 export default function CodeBlockEditor(props: Readonly<CodeBlockEditorProps>) {
   /** Allow tabs in the textarea and restore cursor position */
@@ -69,6 +69,6 @@ export default function CodeBlockEditor(props: Readonly<CodeBlockEditorProps>) {
 }
 
 interface CodeBlockEditorProps {
-  block: CodeContentBlock;
-  onChange: (block: CodeContentBlock) => void;
+  block: CodeContentBlockData;
+  onChange: (block: CodeContentBlockData) => void;
 }

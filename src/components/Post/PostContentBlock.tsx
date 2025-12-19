@@ -1,83 +1,23 @@
-import { Box, Paper, Typography } from '@mui/material';
-import useImages from '../../hooks/useImages';
-import type { CodeContentBlock } from '../../models/CodeContentBlock';
-import type { ContentBlock, ImageContentBlock } from '../../models/ContentBlock';
+import type { CodeContentBlockData } from '../../models/CodeContentBlockData';
+import type { ContentBlockData } from '../../models/ContentBlockData';
+import type { ImageContentBlockData } from '../../models/ImageContentBlockData';
+import type { KeyValueBlockData } from '../../models/KeyValueBlockData';
+import CodeContentBlock from './ContentBlocks/CodeContentBlock';
+import ImageContentBlock from './ContentBlocks/ImageContentBlock';
+import KeyValueBlock from './ContentBlocks/KeyValueBlock';
+import ParagraphContentBlock from './ContentBlocks/ParagraphContentBlock';
 
 export default function PostContentBlock(props: Readonly<PostContentBlockProps>) {
-  const { localImage } = useImages();
-  const hasSpacers = !!props.block.content?.includes('\n\n');
-
   const showBlockType = () => {
     switch (props.block.type) {
       case 'paragraph':
-        return hasSpacers ? (
-          <Typography
-            component="pre"
-            sx={{
-              whiteSpace: 'pre-wrap',
-              overflowX: 'auto'
-            }}
-          >
-            {props.block.content}
-          </Typography>
-        ) : (
-          <p>{props.block.content}</p>
-        );
+        return <ParagraphContentBlock content={props.block.content} />;
       case 'image':
-        const imgContent = props.block as ImageContentBlock;
-        return (
-          <Box
-            component="img"
-            src={localImage(imgContent.url)}
-            alt={imgContent.alt}
-            className="py-4"
-            sx={{
-              borderRadius: 2,
-              display: 'block',
-              objectFit: 'contain',
-              width: '100%',
-              maxWidth: {
-                xs: '100%',
-                sm: '100%',
-                md: 600,
-                lg: 500
-              },
-              maxHeight: {
-                xs: '100%',
-                sm: '100%',
-                md: 400,
-                lg: 400
-              },
-              margin: 'auto',
-              boxShadow: 'inherit'
-            }}
-          />
-        );
+        return <ImageContentBlock data={props.block as ImageContentBlockData} />;
       case 'code':
-        return (
-          <div className="py-4">
-            <Paper
-              component="div"
-              elevation={0}
-              className="p-2 border rounded border-1 border-info"
-            >
-              <Typography
-                component="pre"
-                color="primary"
-                sx={{
-                  fontFamily: 'monospace',
-                  whiteSpace: 'pre-wrap',
-                  overflowX: 'auto'
-                }}
-              >
-                {props.block.content}
-              </Typography>
-            </Paper>
-            <Typography variant="overline">
-              {(props.block as CodeContentBlock).language}
-            </Typography>
-          </div>
-        );
+        return <CodeContentBlock data={props.block as CodeContentBlockData} />;
+      case 'keyValue':
+        return <KeyValueBlock data={props.block as KeyValueBlockData} />;
       default:
         return <>{props.block.content}</>;
     }
@@ -86,5 +26,5 @@ export default function PostContentBlock(props: Readonly<PostContentBlockProps>)
   return <>{showBlockType()}</>;
 }
 interface PostContentBlockProps {
-  block: ContentBlock;
+  block: ContentBlockData;
 }

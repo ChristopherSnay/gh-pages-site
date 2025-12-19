@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import useAdminPost from '../../hooks/local-only/useAdminPost';
 import type { AlertDetail } from '../../models/AlertDetail';
-import type { ContentBlock } from '../../models/ContentBlock';
+import type { ContentBlockData } from '../../models/ContentBlockData';
 import ContentBlockList from './ContentBlockList';
 import ContentBlockMenu from './ContentBlockMenu';
 
@@ -54,8 +54,8 @@ export default function PostForm() {
     updatePost({ ...post, tags });
   };
 
-  const handleBlockAdd = (blockType: ContentBlock['type']) => {
-    const newBlock: ContentBlock = { type: blockType, content: '' };
+  const handleBlockAdd = (blockType: ContentBlockData['type']) => {
+    const newBlock: ContentBlockData = { type: blockType, content: '' };
     const updatedBlocks = post?.blocks ? [...post.blocks, newBlock] : [newBlock];
     updatePost({ ...post, blocks: updatedBlocks });
   };
@@ -130,7 +130,7 @@ export default function PostForm() {
         {post && (
           <ContentBlockList
             blocks={post.blocks}
-            onChange={(blocks: ContentBlock[]) => updatePost({ ...post, blocks })}
+            onChange={(blocks: ContentBlockData[]) => updatePost({ ...post, blocks })}
           />
         )}
 

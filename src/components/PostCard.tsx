@@ -4,7 +4,6 @@ import useImages from '../hooks/useImages';
 import type { Post } from '../models/Post';
 import { getRandomHue } from '../utils/imageFilter';
 import { localDate } from '../utils/localDate';
-import AuthorAvatar from './AuthorAvatar';
 
 export default function PostCard(props: Readonly<PostCardProps>) {
   const { localImage } = useImages();
@@ -34,14 +33,20 @@ export default function PostCard(props: Readonly<PostCardProps>) {
         />
 
         <CardContent>
-          {props.post.tags && (
-            <Typography variant="overline">
-              {props.post.tags?.join(', ').toUpperCase()}
-            </Typography>
-          )}
-          <Typography variant="h5" className="mb-2 mt-0">
+          <Typography variant="h5" className="">
             {props.post.title}
           </Typography>
+          <div className="d-flex justify-content-between align-items-center mt-2">
+            {props.post.tags?.length > 0 && (
+              <Typography variant="overline" className="lh-1">
+                {props.post.tags?.join(', ').toUpperCase()}
+              </Typography>
+            )}
+            <Typography variant="overline" className="lh-1">
+              {localDate(props.post.date)}
+            </Typography>
+          </div>
+
           <Typography
             variant="body2"
             sx={{
@@ -56,9 +61,6 @@ export default function PostCard(props: Readonly<PostCardProps>) {
           </Typography>
 
           {/* Card Footer */}
-          <div className="d-flex justify-content-between align-items-center mt-3">
-            <AuthorAvatar date={localDate(props.post.date)} name={props.post.author} />
-          </div>
         </CardContent>
       </CardActionArea>
     </Card>

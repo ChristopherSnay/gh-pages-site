@@ -1,5 +1,5 @@
 import { TextField } from '@mui/material';
-import type { ImageContentBlock } from '../../../models/ImageContentBlock';
+import type { ImageContentBlockData } from '../../../models/ImageContentBlockData';
 
 export default function ImageBlockEditor(props: Readonly<ImageBlockEditorProps>) {
   return (
@@ -39,6 +39,6 @@ export default function ImageBlockEditor(props: Readonly<ImageBlockEditorProps>)
 }
 
 interface ImageBlockEditorProps {
-  block: ImageContentBlock;
-  onChange: (block: ImageContentBlock) => void;
+  block: ImageContentBlockData;
+  onChange: (block: ImageContentBlockData) => void;
 }

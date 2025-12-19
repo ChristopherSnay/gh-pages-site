@@ -1,4 +1,4 @@
-import type { ContentBlock } from './ContentBlock';
+import type { ContentBlockData } from './ContentBlockData';
 import type { PostManifestEntry } from './PostManifestEntry';
 
 export interface Post extends PostManifestEntry {
@@ -9,5 +9,5 @@ export interface Post extends PostManifestEntry {
   // tags: string[];
   // author: string;
   // image?: string;
-  blocks?: ContentBlock[];
+  blocks?: ContentBlockData[];
 }

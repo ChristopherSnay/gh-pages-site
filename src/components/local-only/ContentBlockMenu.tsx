@@ -1,7 +1,7 @@
 import { Button, Menu, MenuItem } from '@mui/material';
 import { useState } from 'react';
 import { BLOCK_TYPES } from '../../constants/blockTypes.const';
-import type { ContentBlock } from '../../models/ContentBlock';
+import type { ContentBlockData } from '../../models/ContentBlockData';
 
 export default function ContentBlockMenu(props: Readonly<ContentBlockCreatorProps>) {
   const [showBlockTypeDialog, setShowBlockTypeDialog] = useState<any | null>(null);
@@ -26,7 +26,7 @@ export default function ContentBlockMenu(props: Readonly<ContentBlockCreatorProp
             value={key}
             onClick={() => {
               props.onBlockAdd(
-                BLOCK_TYPES[key as keyof typeof BLOCK_TYPES] as ContentBlock['type']
+                BLOCK_TYPES[key as keyof typeof BLOCK_TYPES] as ContentBlockData['type']
               );
               handleDialogClose();
             }}
@@ -40,5 +40,5 @@ export default function ContentBlockMenu(props: Readonly<ContentBlockCreatorProp
 }
 
 export interface ContentBlockCreatorProps {
-  onBlockAdd: (blockType: ContentBlock['type']) => void;
+  onBlockAdd: (blockType: ContentBlockData['type']) => void;
 }
