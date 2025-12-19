@@ -1,8 +1,12 @@
 import { TextField } from '@mui/material';
+import { useRef } from 'react';
 import type { CodeContentBlock } from '../../../models/CodeContentBlock';
 
 export default function CodeBlockEditor(props: Readonly<CodeBlockEditorProps>) {
-  /** Allow tabs in the textarea */
+  /** Allow tabs in the textarea and restore cursor position */
+
+  const textFieldRef = useRef<HTMLTextAreaElement>(null);
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!e.shiftKey && e.key === 'Tab') {
       e.preventDefault();
@@ -14,6 +18,14 @@ export default function CodeBlockEditor(props: Readonly<CodeBlockEditorProps>) {
         tab +
         target.value.substring(selectionEnd ?? 0);
       handleFieldChange(newText);
+      // Restore cursor position after tab
+      setTimeout(() => {
+        const cursorPos = (selectionStart ?? 0) + tab.length;
+        if (textFieldRef.current) {
+          textFieldRef.current.selectionStart = textFieldRef.current.selectionEnd =
+            cursorPos;
+        }
+      }, 0);
     }
   };
 
@@ -45,6 +57,7 @@ export default function CodeBlockEditor(props: Readonly<CodeBlockEditorProps>) {
               fontSize: '1rem'
             }
           }}
+          inputRef={textFieldRef}
           onChange={(e) => {
             handleFieldChange(e.target.value);
           }}

@@ -244,7 +244,7 @@
     "tags": [
       "raspberrypi"
     ],
-    "updated": "2025-12-19T02:40:37.737171Z",
+    "updated": "2025-12-19T15:47:05.271Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -257,7 +257,7 @@
       "curl",
       "python"
     ],
-    "updated": "2025-12-19T02:40:37.735172Z",
+    "updated": "2025-12-19T15:47:23.792Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -318,7 +318,7 @@
     "tags": [
       "elasticsearch"
     ],
-    "updated": "2025-12-19T02:40:37.711629Z",
+    "updated": "2025-12-19T15:47:47.080Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -616,7 +616,7 @@
     "author": "Christopher Snay"
   },
   {
-    "filename": "2021-06-24-00-00-get-enum-definitions-from-c#-api-for-angular.json",
+    "filename": "2021-06-24-00-00-get-enum-definitions-from-csharp-api-for-angular.json",
     "title": "Get enum definitions from C# API for Angular",
     "date": "2021-06-24T00:00:00Z",
     "type": "featured",
@@ -624,7 +624,7 @@
       "c#",
       "code"
     ],
-    "updated": "2025-12-19T02:40:37.726628Z",
+    "updated": "2025-12-19T15:42:25.391Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -717,7 +717,7 @@
       "code",
       "c#"
     ],
-    "updated": "2025-12-19T02:54:24.156Z",
+    "updated": "2025-12-19T15:43:17.183Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -857,7 +857,7 @@
       "sql",
       "code"
     ],
-    "updated": "2025-12-19T02:40:37.744173Z",
+    "updated": "2025-12-19T15:43:35.493Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -945,7 +945,7 @@
     "tags": [
       "hobby"
     ],
-    "updated": "2025-12-19T15:30:25.928Z",
+    "updated": "2025-12-19T15:36:05.521Z",
     "cover": "splash-bg.jpg",
     "author": "Christopher Snay"
   },

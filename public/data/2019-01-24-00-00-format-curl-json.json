@@ -11,9 +11,10 @@
   "blocks": [
     {
       "content": "curl -X GET \"http://api/path\" -H \"accept: application/json\" | python -mjson.tool",
-      "type": "code"
+      "type": "code",
+      "language": "shell"
     }
   ],
   "date": "2019-01-24T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.735172Z"
+  "updated": "2025-12-19T15:47:23.792Z"
 }
