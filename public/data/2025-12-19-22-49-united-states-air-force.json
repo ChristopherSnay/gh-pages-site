@@ -1,0 +1,45 @@
+{
+  "filename": "2025-12-19-22-49-united-states-air-force.json",
+  "title": "United States Air Force",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "usaf_001.jpg",
+  "blocks": [
+    {
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Company",
+          "value": "United States Air Force"
+        },
+        {
+          "key": "Title",
+          "value": "Electronic Warfare Systems Technician"
+        },
+        {
+          "key": "Dates",
+          "value": "2001 - 2008"
+        },
+        {
+          "key": "Basic Training (2001 - 2001)",
+          "value": "Lackland Air Force Base, San Antonio, TX"
+        },
+        {
+          "key": "Tech School (2001 - 2002)",
+          "value": "Keesler Air Force Base, Biloxi, MS"
+        },
+        {
+          "key": "Duty Station 1 (2002 - 2006)",
+          "value": "Offutt Air Force Base, Bellevue, NE"
+        },
+        {
+          "key": "Duty Station 2 (2006 - 2008)",
+          "value": "Sheppard Air Force Base, Wichita Falls, TX"
+        }
+      ]
+    }
+  ],
+  "date": "2001-07-24T00:00:00.000Z",
+  "updated": "2025-12-20T03:53:17.664Z"
+}

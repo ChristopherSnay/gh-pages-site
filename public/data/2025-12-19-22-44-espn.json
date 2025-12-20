@@ -1,0 +1,33 @@
+{
+  "filename": "2025-12-19-22-44-espn.json",
+  "title": "ESPN",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "espn_001.png",
+  "blocks": [
+    {
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Company",
+          "value": "ESPN"
+        },
+        {
+          "key": "Title",
+          "value": "Information Security (Co-op)"
+        },
+        {
+          "key": "Dates",
+          "value": "2013 - 2013"
+        },
+        {
+          "key": "Location",
+          "value": "Bristol, CT"
+        }
+      ]
+    }
+  ],
+  "date": "2013-07-01T00:00:00.000Z",
+  "updated": "2025-12-20T03:44:50.932Z"
+}

@@ -1,0 +1,33 @@
+{
+  "filename": "2025-12-19-22-21-chartwise.json",
+  "title": "ChartWise",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "chartwise_001.jpg",
+  "blocks": [
+    {
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Company",
+          "value": "Chartwise Medical Systems, Inc."
+        },
+        {
+          "key": "Title",
+          "value": "Software Engineer"
+        },
+        {
+          "key": "Dates",
+          "value": "2018 - 2019"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Full stack developer for C#, MS SQL, Flat UI, JQuery, .NET Web API application. Add new features, enhance existing features, triage/fix bugs. Refactored backend services to Domain-Driven Design."
+    }
+  ],
+  "date": "2018-07-01T00:00:00.000Z",
+  "updated": "2025-12-20T03:55:22.787Z"
+}
