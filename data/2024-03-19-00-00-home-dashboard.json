@@ -10,16 +10,34 @@
   "cover": "dash_001.jpg",
   "blocks": [
     {
-      "content": "Custom Smart Home Interface.",
+      "content": "Custom Smart Home Interface.\n\nThis fully custom web application runs on my local IIS server and is displayed via a Raspberry Pi with a touchscreen. Built with Angular Material and a .NET backend, it serves as a centralized smart home dashboard, integrating seamlessly with multiple IoT APIs:",
       "type": "paragraph"
     },
     {
-      "content": "This fully custom web application runs on my local IIS server and is displayed via a Raspberry Pi with a touchscreen. Built with Angular Material and a .NET backend, it serves as a centralized smart home dashboard, integrating seamlessly with multiple IoT APIs:",
-      "type": "paragraph"
-    },
-    {
-      "content": "- Philips Hue\n- Samsung SmartThings\n- Hydrawise\n- OpenMeteo\n- Roku",
-      "type": "code"
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Philips Hue",
+          "value": "Controls the lights"
+        },
+        {
+          "key": "Samsung SmartThings",
+          "value": "Controls the TV"
+        },
+        {
+          "key": "Hydrawise",
+          "value": "Controls the Sprinklers"
+        },
+        {
+          "key": "Roku",
+          "value": "Controls the Roku"
+        },
+        {
+          "key": "OpenMeteo",
+          "value": "Current Weather and Forecast API"
+        }
+      ]
     },
     {
       "content": "The project showcases real-time device control, environmental monitoring, and media interaction — all through a sleek, responsive interface. It’s a hands-on blend of frontend design, backend integration, and hardware deployment that turns a Raspberry Pi into a powerful home automation hub.",
@@ -61,5 +79,5 @@
     }
   ],
   "date": "2024-03-19T00:00:00Z",
-  "updated": "2025-12-19T18:37:49.178Z"
+  "updated": "2025-12-20T01:49:40.303Z"
 }

@@ -15,9 +15,10 @@
     },
     {
       "content": "--no-standalone",
-      "type": "code"
+      "type": "code",
+      "language": "shell"
     }
   ],
   "date": "2023-12-01T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.700628Z"
+  "updated": "2025-12-20T02:44:14.634Z"
 }

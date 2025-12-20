@@ -10,9 +10,10 @@
   "blocks": [
     {
       "content": "// deletes all data\ncurl -XDELETE localhost:9200/*\n\n// deletes index \ncurl -XDELETE localhost:9200/indexname",
-      "type": "code"
+      "type": "code",
+      "language": "shell"
     }
   ],
   "date": "2019-04-23T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.711629Z"
+  "updated": "2025-12-20T01:24:24.336Z"
 }

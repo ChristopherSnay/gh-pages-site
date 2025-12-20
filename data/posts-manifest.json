@@ -270,7 +270,7 @@
       "code",
       "sysadmin"
     ],
-    "updated": "2025-12-19T02:40:37.709629Z",
+    "updated": "2025-12-20T02:42:03.194Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -282,7 +282,7 @@
     "tags": [
       "git"
     ],
-    "updated": "2025-12-19T02:40:37.710651Z",
+    "updated": "2025-12-20T02:41:35.138Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -294,7 +294,7 @@
     "tags": [
       "elasticsearch"
     ],
-    "updated": "2025-12-19T02:40:37.711629Z",
+    "updated": "2025-12-20T01:24:24.336Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -306,7 +306,7 @@
     "tags": [
       "elasticsearch"
     ],
-    "updated": "2025-12-19T02:40:37.712628Z",
+    "updated": "2025-12-20T01:24:43.429Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -332,7 +332,7 @@
       "entityframework",
       "mysql"
     ],
-    "updated": "2025-12-19T02:40:37.735172Z",
+    "updated": "2025-12-20T01:26:32.285Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -832,7 +832,7 @@
       "angular",
       "code"
     ],
-    "updated": "2025-12-19T02:40:37.700628Z",
+    "updated": "2025-12-20T02:44:14.634Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -883,7 +883,7 @@
       "code",
       "angular"
     ],
-    "updated": "2025-12-19T02:40:37.721630Z",
+    "updated": "2025-12-20T01:31:36.573Z",
     "cover": "",
     "author": "Christopher Snay"
   },
@@ -896,7 +896,7 @@
       "hobby",
       "raspberrypi"
     ],
-    "updated": "2025-12-19T18:37:49.178Z",
+    "updated": "2025-12-20T01:49:40.303Z",
     "cover": "dash_001.jpg",
     "author": "Christopher Snay"
   },
@@ -908,7 +908,7 @@
     "tags": [
       "sysadmin"
     ],
-    "updated": "2025-12-19T02:40:37.715629Z",
+    "updated": "2025-12-20T02:43:48.075Z",
     "cover": "sysadmin-password.png",
     "author": "Christopher Snay"
   },
@@ -987,7 +987,7 @@
     "date": "2020-02-04T00:00:00.000Z",
     "type": "experience",
     "tags": [],
-    "updated": "2025-12-18T21:25:21.843Z",
+    "updated": "2025-12-20T02:39:17.237Z",
     "cover": "travelers_001.png",
     "author": "Christopher Snay"
   }

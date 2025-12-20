@@ -12,17 +12,24 @@
   "blocks": [
     {
       "content": "PM> Scaffold-DbContext \"server=IP.ADD.RE.SS;user=dbuser;password=dbpass;database=dbname\" MySql.Data.EntityFrameworkCore -o dbname -f",
-      "type": "code"
+      "type": "code",
+      "language": "package management console"
     },
     {
-      "content": "Requirement: Microsoft.EntityFrameworkCore.Tools",
-      "type": "paragraph"
-    },
-    {
-      "content": "Different providers: MySql.Data.EntityFrameworkCoreMicrosoft.EntityFrameworkCore.SqlServer",
-      "type": "paragraph"
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Requirement",
+          "value": "Microsoft.EntityFrameworkCore.Tools"
+        },
+        {
+          "key": "Providers",
+          "value": "MySql.Data.EntityFrameworkCore, Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ]
     }
   ],
   "date": "2019-04-24T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.735172Z"
+  "updated": "2025-12-20T01:26:32.285Z"
 }
