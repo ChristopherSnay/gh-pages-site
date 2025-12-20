@@ -11,9 +11,10 @@
   "blocks": [
     {
       "content": "interval(1000).subscribe(() => {\n\tthis._getLatest().subscribe(latest => {\n\t});\n});",
-      "type": "code"
+      "type": "code",
+      "language": "typescript"
     }
   ],
   "date": "2024-01-22T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.721630Z"
+  "updated": "2025-12-20T01:31:36.573Z"
 }

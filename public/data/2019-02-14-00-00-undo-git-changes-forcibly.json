@@ -10,9 +10,10 @@
   "blocks": [
     {
       "content": "git reset --hard HEAD",
-      "type": "code"
+      "type": "code",
+      "language": "shell"
     }
   ],
   "date": "2019-02-14T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.710651Z"
+  "updated": "2025-12-20T02:41:35.138Z"
 }

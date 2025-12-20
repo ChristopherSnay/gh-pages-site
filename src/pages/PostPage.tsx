@@ -32,7 +32,7 @@ export default function PostPage() {
 
           <div className="container">
             <div className="row justify-content-center">
-              <Paper elevation={0} className="col-md-8 px-4">
+              <Paper elevation={0} className="col-md-8 px-3">
                 <div className="my-3">
                   <AuthorAvatar date={localDate(post.date)} name={post.author} />
                 </div>
@@ -51,7 +51,9 @@ export default function PostPage() {
                 </header>
 
                 {post.blocks?.map((block, blockIndex) => (
-                  <PostContentBlock key={blockIndex} block={block} />
+                  <section key={blockIndex} className="mb-4">
+                    <PostContentBlock block={block} />
+                  </section>
                 ))}
               </Paper>
             </div>

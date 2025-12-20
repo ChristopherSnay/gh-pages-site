@@ -6,14 +6,20 @@
   "cover": "travelers_001.png",
   "blocks": [
     {
-      "type": "paragraph",
-      "content": "Software Engineer"
-    },
-    {
-      "type": "paragraph",
-      "content": "2020 - Present"
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Title",
+          "value": "Software Engineer"
+        },
+        {
+          "key": "Dates",
+          "value": "2020 - Present"
+        }
+      ]
     }
   ],
   "date": "2020-02-04T00:00:00.000Z",
-  "updated": "2025-12-18T21:25:21.843Z"
+  "updated": "2025-12-20T02:39:17.237Z"
 }

@@ -16,7 +16,7 @@ export default function ParagraphContentBlock(
       {props.content}
     </Typography>
   ) : (
-    <p>{props.content}</p>
+    <Typography component="p">{props.content}</Typography>
   );
 }
 

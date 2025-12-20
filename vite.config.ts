@@ -20,5 +20,13 @@ export default defineConfig(({ mode }) => ({
     proxy: {
       '/api': 'http://localhost:3001'
     }
+  },
+  // Hide Bootstrap deprecation warnings
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true
+      }
+    }
   }
 }));

@@ -11,6 +11,7 @@ export default function HyperlinkBlockEditor(props: Readonly<HyperlinkBlockEdito
       />
       <TextField
         label="URL"
+        fullWidth
         value={props.block.url}
         onChange={(e) => props.onChange({ ...props.block, url: e.target.value })}
       />

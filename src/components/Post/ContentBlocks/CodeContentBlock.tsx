@@ -1,9 +1,19 @@
-import { Paper, Typography } from '@mui/material';
+import { Alert, Button, Paper, Slide, Snackbar, Typography } from '@mui/material';
+import { useState } from 'react';
 import type { CodeContentBlockData } from '../../../models/CodeContentBlockData';
 
 export default function CodeContentBlock(props: Readonly<CodeContentBlockProps>) {
+  const [snackbarOpen, setSnackbarOpen] = useState<boolean>(false);
+
+  const handleCopyClick = (): void => {
+    if (props.data.content) {
+      navigator.clipboard.writeText(props.data.content);
+      setSnackbarOpen(true);
+    }
+  };
+
   return (
-    <div className="mb-5">
+    <>
       <Paper
         component="div"
         elevation={0}
@@ -21,8 +31,21 @@ export default function CodeContentBlock(props: Readonly<CodeContentBlockProps>)
           {props.data.content}
         </Typography>
       </Paper>
-      <Typography variant="overline">{props.data.language}</Typography>
-    </div>
+      <div className="d-flex justify-content-between align-items-top">
+        <Typography variant="overline" color="textDisabled">
+          {props.data.language}
+        </Typography>
+        <Button onClick={handleCopyClick}>Copy</Button>
+      </div>
+      <Snackbar
+        open={snackbarOpen}
+        onClose={() => setSnackbarOpen(false)}
+        autoHideDuration={3000}
+        slots={{ transition: Slide }}
+      >
+        <Alert severity="success">Code copied to clipboard</Alert>
+      </Snackbar>
+    </>
   );
 }
 

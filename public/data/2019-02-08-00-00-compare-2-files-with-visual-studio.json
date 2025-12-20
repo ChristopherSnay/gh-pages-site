@@ -2,7 +2,10 @@
   "filename": "2019-02-08-00-00-compare-2-files-with-visual-studio.json",
   "title": "Compare 2 Files with Visual Studio",
   "type": "featured",
-  "tags": ["code", "sysadmin"],
+  "tags": [
+    "code",
+    "sysadmin"
+  ],
   "author": "Christopher Snay",
   "cover": "",
   "blocks": [
@@ -16,9 +19,10 @@
     },
     {
       "content": "@echo off\necho Drag and drop the first file onto this window. Then press [ENTER]\nset /p file1=\necho Drag and drop the second file onto this window. Then press [ENTER]\nset /p file2=\n\"C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\IDE\\devenv.exe\" /diff %file1% %file2%",
-      "type": "code"
+      "type": "code",
+      "language": "cmd"
     }
   ],
   "date": "2019-02-08T00:00:00Z",
-  "updated": "2025-12-19T02:40:37.709629Z"
+  "updated": "2025-12-20T02:42:03.194Z"
 }
