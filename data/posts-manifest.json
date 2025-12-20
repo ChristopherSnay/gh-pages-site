@@ -957,7 +957,7 @@
     "date": "2014-05-01T00:00:00.000Z",
     "type": "education",
     "tags": [],
-    "updated": "2025-12-19T19:49:38.379Z",
+    "updated": "2025-12-20T03:09:30.841Z",
     "cover": "uconn_001.png",
     "author": "Christopher Snay"
   },
@@ -967,7 +967,7 @@
     "date": "2007-01-01T00:00:00.000Z",
     "type": "education",
     "tags": [],
-    "updated": "2025-12-19T19:50:29.109Z",
+    "updated": "2025-12-20T03:10:25.726Z",
     "cover": "ccaf_001.png",
     "author": "Christopher Snay"
   },
@@ -987,8 +987,68 @@
     "date": "2020-02-04T00:00:00.000Z",
     "type": "experience",
     "tags": [],
-    "updated": "2025-12-20T02:39:17.237Z",
+    "updated": "2025-12-20T03:12:14.903Z",
     "cover": "travelers_001.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-14-selective-insurance.json",
+    "title": "Selective Insurance",
+    "date": "2019-02-01T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:28:47.083Z",
+    "cover": "selective_001.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-21-chartwise.json",
+    "title": "ChartWise",
+    "date": "2018-07-01T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:55:22.787Z",
+    "cover": "chartwise_001.jpg",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-30-progeny-systems-corporation.json",
+    "title": "Progeny Systems Corporation",
+    "date": "2014-06-01T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:37:48.006Z",
+    "cover": "progeny_001.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-40-uconn-student-affairs-it.json",
+    "title": "UCONN - Student Affairs IT",
+    "date": "2011-02-01T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:41:14.366Z",
+    "cover": "sait_001.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-44-espn.json",
+    "title": "ESPN",
+    "date": "2013-07-01T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:44:50.932Z",
+    "cover": "espn_001.png",
+    "author": "Christopher Snay"
+  },
+  {
+    "filename": "2025-12-19-22-49-united-states-air-force.json",
+    "title": "United States Air Force",
+    "date": "2001-07-24T00:00:00.000Z",
+    "type": "experience",
+    "tags": [],
+    "updated": "2025-12-20T03:53:17.664Z",
+    "cover": "usaf_001.jpg",
     "author": "Christopher Snay"
   }
 ]

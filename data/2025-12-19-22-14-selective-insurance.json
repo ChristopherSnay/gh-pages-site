@@ -1,0 +1,37 @@
+{
+  "filename": "2025-12-19-22-14-selective-insurance.json",
+  "title": "Selective Insurance",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "selective_001.png",
+  "blocks": [
+    {
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Company",
+          "value": "Selective Insurance"
+        },
+        {
+          "key": "Title",
+          "value": "Software Engineer"
+        },
+        {
+          "key": "Location",
+          "value": "Glastonbury, CT"
+        },
+        {
+          "key": "Dates",
+          "value": "2019 - 2020"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Full stack lead developer for .NET Core 2 Web API Project. Led development for modernization of VB.NET Web Forms-based insurance quoting software. Led demonstrations mentoring offshore teams on SOLID principles and unit testing. Final approval authority for code reviews. Refactored legacy .NET Framework applications to Model-View-Presenter."
+    }
+  ],
+  "date": "2019-02-01T00:00:00.000Z",
+  "updated": "2025-12-20T03:28:47.083Z"
+}

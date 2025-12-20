@@ -1,0 +1,37 @@
+{
+  "filename": "2025-12-19-22-30-progeny-systems-corporation.json",
+  "title": "Progeny Systems Corporation",
+  "type": "experience",
+  "author": "Christopher Snay",
+  "cover": "progeny_001.png",
+  "blocks": [
+    {
+      "type": "keyValue",
+      "content": "",
+      "items": [
+        {
+          "key": "Company",
+          "value": "Progeny Systems Corporation"
+        },
+        {
+          "key": "Title",
+          "value": "Software Engineer"
+        },
+        {
+          "key": "Location",
+          "value": "Groton, CT"
+        },
+        {
+          "key": "Dates",
+          "value": "2014 - 2018"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Lead Software developer for ASP.NET Web Forms application used by US Navy and defense contractors. Programming languages include: C#, JavaScript, jQuery, CSS, HTML, and Microsoft SQL. Front-end uses Telerik UI Framework for .NET. Unit tests written with Telerik JustMock. Utilize Visual Studio and SQL Server Management Studio for development. User stories, tasks and bugs reported in Microsoft Team Foundation Server version control. Significant amount of work in improving software performance and refactoring legacy code. Follow Model-View-Presenter software design patterns. Ensure code meets US Department of Defense Security Technical Implementation Guides (STIGs). Maintain a US Department of Defense Secret security clearance."
+    }
+  ],
+  "date": "2014-06-01T00:00:00.000Z",
+  "updated": "2025-12-20T03:37:48.006Z"
+}

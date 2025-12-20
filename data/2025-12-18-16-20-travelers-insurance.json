@@ -18,8 +18,12 @@
           "value": "2020 - Present"
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Lead developer for a suite of applications, specializing in React, Angular and modern .NET technologies. Responsible for driving end-to-end solution design, implementation, and technical leadership. Champion of coding standards and engineering best practices, ensuring scalable, maintainable, and high-quality software across teams."
     }
   ],
   "date": "2020-02-04T00:00:00.000Z",
-  "updated": "2025-12-20T02:39:17.237Z"
+  "updated": "2025-12-20T03:12:14.903Z"
 }
