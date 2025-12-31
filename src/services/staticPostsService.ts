@@ -3,12 +3,12 @@ import type { Post } from '../models/Post';
 import type { PostManifestEntry } from '../models/PostManifestEntry';
 
 const baseUrl = import.meta.env.BASE_URL || '/';
-const defaultPageSize = import.meta.env.VITE_DEFAULT_PAGE_SIZE;
+const defaultPageSize: number = Number(import.meta.env.VITE_DEFAULT_PAGE_SIZE);
 
 export const staticPostsService = {
   fetchPosts: async (
-    page = 1,
-    pageSize = defaultPageSize,
+    page: number = 1,
+    pageSize: number = defaultPageSize,
     type?: string
   ): Promise<PaginatedPosts> => {
     const res = await fetch(`${baseUrl}data/posts-manifest.json`);

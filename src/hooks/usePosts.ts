@@ -5,7 +5,7 @@ import { postsService } from '../services/local-only/postsService';
 import { staticPostsService } from '../services/staticPostsService';
 
 const isDev = import.meta.env.MODE === 'development';
-const defaultPageSize = import.meta.env.VITE_DEFAULT_PAGE_SIZE;
+const defaultPageSize: number = Number(import.meta.env.VITE_DEFAULT_PAGE_SIZE);
 
 export const usePosts = (type?: string) => {
   const [posts, setPosts] = useState<Post[]>([]);
