@@ -15,7 +15,9 @@ export const staticPostsService = {
     let manifest: PostManifestEntry[] = await res.json();
 
     // Sort by date descending
-    manifest.sort((a, b) => b.filename.localeCompare(a.date));
+    manifest = manifest.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
 
     if (type) {
       manifest = manifest.filter((entry) => entry.type === type);
