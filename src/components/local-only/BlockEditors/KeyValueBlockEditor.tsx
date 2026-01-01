@@ -54,6 +54,7 @@ export default function KeyValueBlockEditor(props: Readonly<KeyValueBlockEditorP
           <div key={index} className="d-flex mb-2 gap-2 align-items-center">
             <TextField
               type="text"
+              label="Key"
               value={item.key}
               className="flex-grow-1"
               onChange={(e) => {
@@ -62,6 +63,7 @@ export default function KeyValueBlockEditor(props: Readonly<KeyValueBlockEditorP
             />
             <TextField
               type="text"
+              label="Value"
               value={item.value}
               className="flex-grow-1"
               onChange={(e) => {
@@ -69,21 +71,28 @@ export default function KeyValueBlockEditor(props: Readonly<KeyValueBlockEditorP
               }}
             />
             <IconButton
+              color="secondary"
               disabled={index === props.block.items.length - 1}
               onClick={() => handleMoveDownClick(index)}
             >
               <ArrowDropDown />
             </IconButton>
-            <IconButton disabled={index === 0} onClick={() => handleMoveUpClick(index)}>
+            <IconButton
+              color="secondary"
+              disabled={index === 0}
+              onClick={() => handleMoveUpClick(index)}
+            >
               <ArrowDropUp />
             </IconButton>
-            <IconButton onClick={() => handleDeleteClick(index)}>
+            <IconButton color="secondary" onClick={() => handleDeleteClick(index)}>
               <Delete />
             </IconButton>
           </div>
         ))}
       </div>
-      <Button onClick={handleAddClick}>Add</Button>
+      <Button color="secondary" onClick={handleAddClick}>
+        Add Key-Value Pair
+      </Button>
     </>
   );
 }

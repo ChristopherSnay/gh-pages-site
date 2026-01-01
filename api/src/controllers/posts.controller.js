@@ -12,36 +12,6 @@ const MANIFEST_PATH = path.resolve(DATA_DIR, 'posts-manifest.json');
 module.exports = postsController = {
   get: async (req, res) => {
     try {
-      const { page, pageSize } = paginator.parsePaginationParams(req);
-
-      let files = await fs.readdir(DATA_DIR);
-      files = files.filter((f) => f !== 'posts-manifest.json');
-      files = sortFilenamesDesc(files);
-
-      const {
-        items: pagedFiles,
-        total,
-        totalPages
-      } = paginator.paginate(files, page, pageSize);
-
-      const posts = await readJsonFiles(DATA_DIR, pagedFiles);
-
-      res.json({
-        data: {
-          posts,
-          page,
-          pageSize,
-          total,
-          totalPages
-        }
-      });
-    } catch (err) {
-      res.status(500).json({ error: err.message });
-    }
-  },
-
-  getFromManifest: async (req, res) => {
-    try {
       const { page, pageSize, type } = paginator.parsePaginationParams(req);
 
       const manifest = await fs.readFile(MANIFEST_PATH, 'utf-8');

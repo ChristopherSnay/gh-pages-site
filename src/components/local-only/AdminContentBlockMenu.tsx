@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { BLOCK_TYPES } from '../../constants/blockTypes.const';
 import type { ContentBlockData } from '../../models/ContentBlockData';
 
-export default function ContentBlockMenu(props: Readonly<ContentBlockCreatorProps>) {
+export default function AdminContentBlockMenu(props: Readonly<ContentBlockCreatorProps>) {
   const [showBlockTypeDialog, setShowBlockTypeDialog] = useState<any | null>(null);
 
   const handleDialogClose = () => {
@@ -13,7 +13,7 @@ export default function ContentBlockMenu(props: Readonly<ContentBlockCreatorProp
   return (
     <div>
       <Button onClick={(e) => setShowBlockTypeDialog(e.currentTarget)}>
-        New Content Block
+        Add Content Block
       </Button>
       <Menu
         open={!!showBlockTypeDialog}

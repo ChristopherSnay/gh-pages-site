@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
+import AdminPostForm from './components/local-only/AdminPostForm';
 import AdminPostList from './components/local-only/AdminPostList';
-import PostForm from './components/local-only/PostForm';
 import DynamicPostsPage from './pages/DynamicPostsPage';
 import AdminPage from './pages/local-only/AdminPage';
 import PostPage from './pages/PostPage';
@@ -42,11 +42,11 @@ export const router = createBrowserRouter(
             },
             {
               path: 'post',
-              element: <PostForm />
+              element: <AdminPostForm />
             },
             {
               path: 'post/:id',
-              element: <PostForm />
+              element: <AdminPostForm />
             }
           ]
         }

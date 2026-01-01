@@ -5,7 +5,7 @@ const postTypesController = require('./controllers/post-types.controller');
 const router = require('express').Router();
 
 // posts
-router.route('/posts').get(postsController.getFromManifest);
+router.route('/posts').get(postsController.get);
 router.route('/posts').post(postsController.save);
 router.route('/posts').put(postsController.update);
 router.route('/posts/:filename').delete(postsController.delete);
