@@ -10,9 +10,9 @@ export default function Header() {
   const isDevelopment = import.meta.env.MODE === 'development';
 
   const filteredPostTypes = useMemo<string[]>(() => {
-    let filtered = [...postTypes];
+    const result = [...postTypes];
 
-    return filtered.filter((x) => x !== 'featured');
+    return result.filter((x) => x !== 'featured');
   }, [postTypes]);
 
   return (
@@ -33,6 +33,17 @@ export default function Header() {
             anchorEl={menuOpen}
             onClose={() => setMenuOpen(null)}
           >
+            {filteredPostTypes.map((type) => (
+              <MenuItem
+                key={type}
+                component={RouterLink}
+                to={`/${type}`}
+                onClick={() => setMenuOpen(null)}
+              >
+                {type}
+              </MenuItem>
+            ))}
+
             {import.meta.env.MODE === 'development' && (
               <MenuItem
                 component={RouterLink}

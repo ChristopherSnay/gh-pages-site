@@ -12,7 +12,7 @@ const MANIFEST_PATH = path.resolve(DATA_DIR, 'posts-manifest.json');
 module.exports = postsController = {
   get: async (req, res) => {
     try {
-      const { page, pageSize, type } = paginator.parsePaginationParams(req);
+      const { page, pageSize, type, tags } = paginator.parsePaginationParams(req);
 
       const manifest = await fs.readFile(MANIFEST_PATH, 'utf-8');
       let manifestData = JSON.parse(manifest);
@@ -21,6 +21,13 @@ module.exports = postsController = {
         manifestData = manifestData.filter((entry) => entry.type === type);
       }
 
+      if (tags && tags.length > 0) {
+        manifestData = manifestData.filter((entry) =>
+          tags.every((tag) => entry.tags.includes(tag))
+        );
+      }
+
+      // Sort by date descending
       manifestData.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );

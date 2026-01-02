@@ -7,12 +7,13 @@ import { staticPostsService } from '../services/staticPostsService';
 const isDev = import.meta.env.MODE === 'development';
 const defaultPageSize: number = Number(import.meta.env.VITE_DEFAULT_PAGE_SIZE);
 
-export const usePosts = (type?: string) => {
+export const usePosts = (postType?: string, initialTags?: string[]) => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<unknown | null>(null);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(defaultPageSize);
+  const [tags, setTags] = useState<string[] | undefined>(initialTags);
   const [total, setTotal] = useState<number>(0);
   const [searchParams] = useSearchParams();
   const pageParam = searchParams.get('page');
@@ -32,8 +33,8 @@ export const usePosts = (type?: string) => {
       setError(null);
       try {
         const response = isDev
-          ? await postsService.fetchPosts(page, defaultPageSize, type)
-          : await staticPostsService.fetchPosts(page, defaultPageSize, type);
+          ? await postsService.fetchPosts(page, defaultPageSize, postType, tags)
+          : await staticPostsService.fetchPosts(page, defaultPageSize, postType, tags);
 
         response.posts.sort(
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -52,7 +53,7 @@ export const usePosts = (type?: string) => {
     };
 
     fetchPosts();
-  }, [type, page]);
+  }, [postType, page, tags]);
 
-  return { posts, loading, error, page, totalPages, pageSize, total, setPage };
+  return { posts, loading, error, page, totalPages, pageSize, total, setPage, setTags };
 };

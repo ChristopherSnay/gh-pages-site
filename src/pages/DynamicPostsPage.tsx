@@ -5,7 +5,7 @@ import { usePosts } from '../hooks/usePosts';
 //TODO: need to gate unrecognized post types
 export default function DynamicPostsPage() {
   const { postType } = useParams();
-  const { posts } = usePosts(postType);
+  const { posts } = usePosts(postType, []);
   const navigate = useNavigate();
 
   const handlePostClick = (filename: string) => {

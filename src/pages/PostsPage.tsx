@@ -4,7 +4,11 @@ import PostCard from '../components/PostCard';
 import { usePosts } from '../hooks/usePosts';
 
 export default function PostsPage() {
-  const { posts, loading, error, totalPages, page, setPage } = usePosts('featured');
+  const defaultTagSearch: string | undefined = import.meta.env.VITE_DEFAULT_TAG_SEARCH;
+  const { posts, loading, error, totalPages, page, setPage } = usePosts(
+    'featured',
+    defaultTagSearch ? [defaultTagSearch] : undefined
+  );
   const navigate = useNavigate();
 
   const handlePostClick = (filename: string) => {

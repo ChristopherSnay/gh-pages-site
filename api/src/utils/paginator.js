@@ -23,22 +23,25 @@ module.exports = paginator = {
     req,
     defaultPage = 1,
     defaultPageSize = process.env.DEFAULT_PAGE_SIZE,
-    defaultType = 'all'
+    defaultType = 'all',
+    defaultTags = ''
   ) => {
     let {
       page = defaultPage,
       pageSize = defaultPageSize,
-      type = defaultType
+      type = defaultType,
+      tags = defaultTags
     } = req.query;
 
     page = parseInt(page, 10);
     pageSize = parseInt(pageSize, 10);
+    tags = tags ? tags.split(',') : [];
 
     // validate the page and pageSize values
     if (isNaN(page) || page < 1) page = defaultPage;
     if (isNaN(pageSize) || pageSize < 1) pageSize = defaultPageSize;
     if (!type) type = defaultType;
 
-    return { page, pageSize, type };
+    return { page, pageSize, type, tags };
   }
 };

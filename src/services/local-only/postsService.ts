@@ -5,11 +5,18 @@ export const postsService = {
   fetchPosts: async (
     page: number,
     pageSize: number,
-    type?: string
+    type?: string,
+    tags?: string[]
   ): Promise<PaginatedPosts> => {
-    const response = await fetch(
-      `/api/posts?page=${page}&pageSize=${pageSize}&type=${type ?? 'all'}`
-    );
+    const params = new URLSearchParams();
+    if (page) params.set('page', page.toString());
+    if (pageSize) params.set('pageSize', pageSize.toString());
+    if (type) params.set('type', type);
+    if (tags && tags.length > 0) params.set('tags', tags.join(','));
+
+    const query = params.toString();
+    const url = query ? `/api/posts?${query}` : '/api/posts';
+    const response = await fetch(url);
     const json = await response.json();
 
     if (!response.ok) {

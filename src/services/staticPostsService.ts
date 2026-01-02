@@ -9,19 +9,26 @@ export const staticPostsService = {
   fetchPosts: async (
     page: number = 1,
     pageSize: number = defaultPageSize,
-    type?: string
+    type?: string,
+    tags?: string[]
   ): Promise<PaginatedPosts> => {
     const res = await fetch(`${baseUrl}data/posts-manifest.json`);
     let manifest: PostManifestEntry[] = await res.json();
+
+    if (type) {
+      manifest = manifest.filter((entry) => entry.type === type);
+    }
+
+    if (tags && tags.length > 0) {
+      manifest = manifest.filter((entry) =>
+        tags.every((tag) => entry.tags.includes(tag))
+      );
+    }
 
     // Sort by date descending
     manifest = manifest.sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
-
-    if (type) {
-      manifest = manifest.filter((entry) => entry.type === type);
-    }
 
     const total = manifest.length;
     const totalPages = Math.ceil(total / pageSize);
